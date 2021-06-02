@@ -1,0 +1,48 @@
+
+.header
+  height: 547px
+  padding-top: 15px
+  background-color: $main-dark
+  &-wrapper
+    margin-bottom: 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    min-height: 40px
+  &-logo
+    width: 163px
+    height: 40px
+    &__link
+      width: 40px
+      height: 40px
+      display: flex
+      flex-direction: row
+      align-items: center
+      background-color: $txt-base-light
+      border-radius: 50%
+    &__icon
+      margin-right: 10px
+  &-btn
+    width: 261px
+    max-width: 23%
+    min-height: 39px
+    border-radius: 10px
+    @include font-param(1rem, 400, 20px)
+    text-transform: uppercase
+    background: #656B70
+.menu
+  max-width: 50%
+  width: 540px
+  &-list
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    &__item
+      &:not(&:last-child)
+        margin-right: 30px
+      &-link
+        @include font-param(1rem, 900, 20px)
+        
+
+

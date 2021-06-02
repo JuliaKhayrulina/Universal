@@ -1,0 +1,146 @@
+.recommend
+  position: absolute
+  top: 99px
+  left: 0
+  right: 0
+  &-top
+    display: flex
+    border-radius: 6px
+    overflow: hidden
+    margin-bottom: 50px
+  &-content
+    position: relative
+    display: none
+    width: 878px
+    background-color: $main-dark
+    &--show
+      display: block
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    &__img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__descr
+      width: 100%
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      position: absolute
+      padding: 56px 55px 100px 55px
+      top: 0
+      left: 0
+      z-index: 99
+    &__developer
+      display: flex
+      align-items: center
+      &-inner
+        display: flex
+        flex-direction: column
+      &-avatar
+        width: 46px
+        height: 46px
+        margin-right: 12px
+        border-radius: 50%
+      &-name
+        @include font-param(1rem, 400, 20px)
+        opacity: 0.85
+      &-post
+        @include font-param(0.85rem, 400, 15px)
+        opacity: 0.4
+    &__theme
+      display: block
+      margin-bottom: 20px
+      @include font-param(0.85rem, 900, 15px)
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $bg-btn
+    &__title 
+      max-width: 83%
+      margin-bottom: 50px
+      font-family: RobotoSlab
+      @include font-param(2.86rem, 900, 50px)
+      color: $txt-base-light
+    &__more
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 154px
+      height: 40px
+      @include font-param(1rem, 900, 20px)
+      border-radius: 20px
+      background-color: $bg-btn
+      &-icon
+        width: 20px
+        height: 20px
+        margin-left: 5px
+        background: url('../img/recommend/Arrow.svg') center center no-repeat
+  &-tabs
+    width: 262px
+    display: flex
+    flex-direction: column
+    background-color: $txt-base-light
+    &__title
+      padding: 20px 25px 19px
+      @include font-param(1rem, 900, 20px)
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $main-dark
+      @include line-grey
+    &__item
+      padding: 17px 25px 19px
+      &:not(&:last-child)
+        @include line-grey
+      &-theme
+        margin-bottom: 8px
+        @include font-param(0.85rem, 900, 15px)
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        &--blue
+          color: #3BBDC4
+        &--grey
+          color: #6E99AE
+        &--purple
+          color: #AC8EE3
+        &--orange
+          color: #FFA34D
+        &--green
+          color: #3DC47E
+      &-text
+        @include font-param(1rem, 400, 20px)
+        color: $txt-base-dark 
+
+  &-block
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding-top: 25px 
+    padding-bottom: 30px
+    border-radius: 6px
+    overflow: hidden
+    background-color: #30363d
+    &__links
+      width: calc(100% / 4)
+      display: flex
+      align-items: center
+      padding-left: 25px
+      padding-right: 25px
+      &:not(&:last-child)
+        border-right: 1px solid #4B5157
+    &__text
+      max-width: 70%
+      @include font-param(1rem, 900, 20px)
+      color: $txt-base-light
+    &__img
+      width: 65px
+      height: 65px
+      margin-left: 9px
+      object-fit: cover
