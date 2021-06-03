@@ -1,0 +1,27 @@
+@media (max-width: 576px)
+  .container
+    max-width: 95%
+  .header
+    &-logo
+      width: 30%
+      &__name
+        width: 70px
+    &-btn
+      max-width: 35%
+      min-height: 30px
+      font-size: 12px
+      
+  .recommend
+    top: 90px
+    &-content
+      display: none
+      &--show
+        display: none
+    &-tabs
+      width: 100%
+    &-block
+      &__links
+        width: 100%
+        justify-content: space-between
+        @include line-grey 
+    

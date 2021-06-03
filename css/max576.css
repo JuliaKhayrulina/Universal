@@ -1,0 +1,15 @@
+@media (max-width: 576px) {
+  .container {
+    max-width: 95%;
+  }
+  .recommend-content {
+    display: none;
+  }
+  .recommend-content--show {
+    display: none;
+  }
+  .recommend-tabs {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=max576.css.map */
