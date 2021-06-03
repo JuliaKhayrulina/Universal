@@ -5,3 +5,41 @@
 
 @mixin line-grey
   border-bottom: 1px solid #d9dadb
+
+@mixin input
+  padding: 0 23px
+  margin-bottom: 5px
+  height: 60px
+  outline: none
+  border: none
+  border-radius: 4px
+  background-color: #fff
+  font-size: 12px
+  line-height: 15px
+  color: #000
+  &::placeholder
+    color: #BDBDBD
+@mixin textarea
+  min-height: 123px
+  padding: 18px 23px
+  outline: none
+  resize: none
+  border: none
+  border-radius: 4px
+  background-color: #fff
+  font-size: 12px
+  line-height: 15px
+  color: #000
+  &::placeholder
+    color: #BDBDBD
+
+@mixin btn-form
+  min-width: 160px
+  max-width: 60%
+  min-height: 50px
+  padding: 18px
+  border-radius: 4px
+  background-color: $bg-btn
+  @include font-param(1rem, 900, 20px)
+  color: $txt-base-light
+  
