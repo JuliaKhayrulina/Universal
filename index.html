@@ -14,14 +14,14 @@
         <div class="header-logo">
           <a href="index.html" class="header-logo__link">
             <img
-              src="./img/UNV.svg"
+              src="./img/svg/UNV.svg"
               alt="Логотип: Universal"
               class="header-logo__icon"
               width="40"
               height="40"
             />
             <img
-              src="./img/Universal.svg"
+              src="./img/svg/Universal.svg"
               alt="Логотип: Universal"
               class="header-logo__name"
               width="113"
@@ -41,25 +41,25 @@
                   оставить заявку
                 </button>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" data-hover="Статьи">
                 <a href="#" class="menu-list__item-link">Статьи</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" data-hover="Новости">
                 <a href="#" class="menu-list__item-link">Новости</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" data-hover="Горячее">
                 <a href="#" class="menu-list__item-link">Горячее</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" data-hover="HTML">
                 <a href="#" class="menu-list__item-link">HTML</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" data-hover="CSS">
                 <a href="#" class="menu-list__item-link">CSS</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" data-hover="JavaScript">
                 <a href="#" class="menu-list__item-link">JavaScript</a>
               </li>
-              <li class="menu-list__item">
+              <li class="menu-list__item" data-hover="Web Design">
                 <a href="#" class="menu-list__item-link">Web Design</a>
               </li>
             </ul>
@@ -94,20 +94,30 @@
             </picture>
             <div class="recommend-content__descr">
               <a href="#" class="recommend-content__developer">
-                <img
-                  src="./img/recommend/David-Gurov.png"
-                  alt="Разработчик: Давид Гуров"
-                  class="avatar recommend-content__developer-avatar"
-                />
+                <picture>
+                  <source
+                    class="avatar recommend-content__developer-avatar"
+                    type="image/webp"
+                    srcset="./img/recommend/Mihail-Rudenya.webp"
+                  />
+                  <img
+                    src="./img/recommend/Mihail-Rudenya.jpg"
+                    alt="Разработчик: Михаил Руденя"
+                    class="avatar recommend-content__developer-avatar"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="recommend-content__developer-inner">
-                  <span class="recommend-content__developer-name">Давид Гуров</span>
+                  <span class="recommend-content__developer-name">Михаил Руденя</span>
                   <span class="recommend-content__developer-post">Разработчик</span>
                 </div>
               </a>
               <div class="recommend-content__descr-inner">
-                <a href="#" class="recommend-content__theme">JavaScript</a>
+                <a href="#" class="recommend-content__theme">CSS</a>
                 <a href="#" class="recommend-content__title-link">
-                  <h2 class="recommend-content__title">Расширение Chrome защищает от атак</h2>
+                  <h2 class="title-hover title-hover recommend-content__title">
+                    Как использовать CSS float после того, как вышел Flexbox
+                  </h2>
                 </a>
                 <a href="#" class="recommend-content__more">
                   Читать далее
@@ -132,11 +142,19 @@
             </picture>
             <div class="recommend-content__descr">
               <a href="#" class="recommend-content__developer">
-                <img
-                  src="./img/recommend/David-Gurov.png"
-                  alt="Разработчик: Давид Гуров"
-                  class="avatar recommend-content__developer-avatar"
-                />
+                <picture>
+                  <source
+                    class="avatar recommend-content__developer-avatar"
+                    type="image/webp"
+                    srcset="./img/recommend/David-Gurov.webp"
+                  />
+                  <img
+                    src="./img/recommend/David-Gurov.png"
+                    alt="Разработчик: Давид Гуров"
+                    class="avatar recommend-content__developer-avatar"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="recommend-content__developer-inner">
                   <span class="recommend-content__developer-name">Давид Гуров</span>
                   <span class="recommend-content__developer-post">Разработчик</span>
@@ -145,7 +163,9 @@
               <div class="recommend-content__descr-inner">
                 <a href="#" class="recommend-content__theme">JavaScript</a>
                 <a href="#" class="recommend-content__title-link">
-                  <h2 class="recommend-content__title">Расширение Chrome защищает от атак</h2>
+                  <h2 class="title-hover recommend-content__title">
+                    Расширение Chrome защищает от атак
+                  </h2>
                 </a>
                 <a href="#" class="recommend-content__more">
                   Читать далее
@@ -170,20 +190,30 @@
             </picture>
             <div class="recommend-content__descr">
               <a href="#" class="recommend-content__developer">
-                <img
-                  src="./img/recommend/David-Gurov.png"
-                  alt="Разработчик: Давид Гуров"
-                  class="avatar recommend-content__developer-avatar"
-                />
+                <picture>
+                  <source
+                    class="avatar recommend-content__developer-avatar"
+                    type="image/webp"
+                    srcset="./img/recommend/Vladislav-Menshov.webp"
+                  />
+                  <img
+                    src="./img/recommend/Vladislav-Menshov.jpg"
+                    alt="Разработчик: Владислав Меньшов"
+                    class="avatar recommend-content__developer-avatar"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="recommend-content__developer-inner">
-                  <span class="recommend-content__developer-name">Давид Гуров</span>
+                  <span class="recommend-content__developer-name">Владислав Меньшов</span>
                   <span class="recommend-content__developer-post">Разработчик</span>
                 </div>
               </a>
               <div class="recommend-content__descr-inner">
-                <a href="#" class="recommend-content__theme">JavaScript</a>
+                <a href="#" class="recommend-content__theme">HTML</a>
                 <a href="#" class="recommend-content__title-link">
-                  <h2 class="recommend-content__title">Расширение Chrome защищает от атак</h2>
+                  <h2 class="title-hover recommend-content__title">
+                    Правильно вставляем картинку на сайт для Retina дисплея
+                  </h2>
                 </a>
                 <a href="#" class="recommend-content__more">
                   Читать далее
@@ -208,20 +238,28 @@
             </picture>
             <div class="recommend-content__descr">
               <a href="#" class="recommend-content__developer">
-                <img
-                  src="./img/recommend/David-Gurov.png"
-                  alt="Разработчик: Давид Гуров"
-                  class="avatar recommend-content__developer-avatar"
-                />
+                <picture>
+                  <source
+                    class="avatar recommend-content__developer-avatar"
+                    type="image/webp"
+                    srcset="./img/recommend/Ekaterina-Krasavceva.webp"
+                  />
+                  <img
+                    src="./img/recommend/Ekaterina-Krasavceva.jpg"
+                    alt="Дизайнер: Екатерина Красавцева"
+                    class="avatar recommend-content__developer-avatar"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="recommend-content__developer-inner">
-                  <span class="recommend-content__developer-name">Давид Гуров</span>
-                  <span class="recommend-content__developer-post">Разработчик</span>
+                  <span class="recommend-content__developer-name">Екатерина Красавцева</span>
+                  <span class="recommend-content__developer-post">Дизайнер</span>
                 </div>
               </a>
               <div class="recommend-content__descr-inner">
-                <a href="#" class="recommend-content__theme">JavaScript</a>
+                <a href="#" class="recommend-content__theme">Web Design</a>
                 <a href="#" class="recommend-content__title-link">
-                  <h2 class="recommend-content__title">Расширение Chrome защищает от атак</h2>
+                  <h2 class="title-hover recommend-content__title">ТОП-10 плагинов для Figma</h2>
                 </a>
                 <a href="#" class="recommend-content__more">
                   Читать далее
@@ -246,24 +284,34 @@
             </picture>
             <div class="recommend-content__descr">
               <a href="#" class="recommend-content__developer">
-                <img
-                  src="./img/recommend/David-Gurov.png"
-                  alt="Разработчик: Давид Гуров"
-                  class="avatar recommend-content__developer-avatar"
-                />
+                <picture>
+                  <source
+                    class="avatar recommend-content__developer-avatar"
+                    type="image/webp"
+                    srcset="./img/recommend/Alexey-Kravcov.webp"
+                  />
+                  <img
+                    src="./img/recommend/Alexey-Kravcov.jpg"
+                    alt="Разработчик: Алексей Кравцов"
+                    class="avatar recommend-content__developer-avatar"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="recommend-content__developer-inner">
-                  <span class="recommend-content__developer-name">Давид Гуров</span>
+                  <span class="recommend-content__developer-name">Алексей Кравцов</span>
                   <span class="recommend-content__developer-post">Разработчик</span>
                 </div>
               </a>
               <div class="recommend-content__descr-inner">
-                <a href="#" class="recommend-content__theme">JavaScript</a>
+                <a href="#" class="recommend-content__theme">CSS</a>
                 <a href="#" class="recommend-content__title-link">
-                  <h2 class="recommend-content__title">Расширение Chrome защищает от атак</h2>
+                  <h2 class="title-hover recommend-content__title">
+                    Возможности CSS Grid Layout , которые уже можно применять
+                  </h2>
                 </a>
                 <a href="#" class="recommend-content__more">
                   Читать далее
-                  <span class="recommend__more-icon"></span>
+                  <span class="recommend-content__more-icon"></span>
                 </a>
               </div>
             </div>
@@ -271,44 +319,44 @@
 
           <div class="recommend-tabs">
             <span class="recommend-tabs__title">Рекомендуем</span>
-            <a href="#" class="recommend-tabs__item" data-tab="CSS-1">
+            <div class="recommend-tabs__item" data-tab="CSS-1">
               <h4 class="recommend-tabs__item-theme recommend-tabs__item-theme--blue">CSS</h4>
               <p class="recommend-tabs__item-text">
                 Как использовать CSS float после того, как вышел flexbox
               </p>
-            </a>
-            <a href="#" class="recommend-tabs__item" data-tab="JavaScript">
+            </div>
+            <div class="recommend-tabs__item" data-tab="JavaScript">
               <h4 class="recommend-tabs__item-theme recommend-tabs__item-theme--grey">
                 JavaScript
               </h4>
               <p class="recommend-tabs__item-text">
                 На каком стандарте писать скрипты, если я фрилансер
               </p>
-            </a>
-            <a href="#" class="recommend-tabs__item" data-tab="HTML">
+            </div>
+            <div class="recommend-tabs__item" data-tab="HTML">
               <h4 class="recommend-tabs__item-theme recommend-tabs__item-theme--purple">HTML</h4>
               <p class="recommend-tabs__item-text">
                 Правильно вставляем картинку на сайт для Retina дисплея
               </p>
-            </a>
-            <a href="#" class="recommend-tabs__item" data-tab="Web-Design">
+            </div>
+            <div class="recommend-tabs__item" data-tab="Web-Design">
               <h4 class="recommend-tabs__item-theme recommend-tabs__item-theme--orange">
                 Web Design
               </h4>
               <p class="recommend-tabs__item-text">ТОП-10 плагинов для Figma</p>
-            </a>
-            <a href="#" class="recommend-tabs__item" data-tab="CSS-2">
+            </div>
+            <div class="recommend-tabs__item" data-tab="CSS-2">
               <h4 class="recommend-tabs__item-theme recommend-tabs__item-theme--green">CSS</h4>
               <p class="recommend-tabs__item-text">
                 Возможности CSS Grid Layout, которые уже можно применять
               </p>
-            </a>
+            </div>
           </div>
         </div>
         <div class="recommend-block">
           <div class="recommend-block__links">
             <a href="#" class="recommend-block__text">25 способов настроить слайдер</a>
-            <a href="#" class="recommend-block__img-link">
+            <a href="#" class="recommend-block__inner">
               <picture>
                 <source
                   class="recommend-block__img"
@@ -385,42 +433,56 @@
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="./img/close.svg" alt="icon: close" width="17" height="16" loading="lazy" />
+          <img src="./img/svg/close.svg" alt="icon: close" width="17" height="16" loading="lazy" />
         </a>
         <h4 class="modal__title modal__title--mb-message">Оставьте заявку</h4>
         <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__form-input"
-            placeholder="Ваше имя*"
-            name="name"
-            minlength="2"
-            required
-            autocomplete="off"
-          />
-          <input
-            type="tel"
-            class="input modal__form-input phone-mask"
-            placeholder="+7 (999) 999-99-99"
-            name="phone"
-            minlength="18"
-            required
-            autocomplete="off"
-          />
-          <input
-            type="email"
-            class="input modal__form-input"
-            placeholder="Ваша почта*"
-            name="email"
-            required
-            autocomplete="off"
-          />
-          <textarea
-            class="modal__form-message"
-            name="message"
-            placeholder="Сообщение"
-            required
-          ></textarea>
+          <div class="input-top">
+            <input
+              type="text"
+              class="input modal__form-input"
+              id="newsletterInput-1"
+              placeholder="Ваше имя*"
+              name="name"
+              minlength="2"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="input-top">
+            <input
+              type="tel"
+              class="input modal__form-input phone-mask"
+              id="newsletterInput-2"
+              placeholder="+7 (999) 999-99-99"
+              name="phone"
+              minlength="18"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="input-top">
+            <input
+              type="email"
+              class="input modal__form-input"
+              id="newsletterInput-3"
+              placeholder="Ваша почта*"
+              name="email"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="input-top">
+            <textarea
+              class="modal__form-message"
+              id="newsletterInput-4"
+              name="message"
+              placeholder="Сообщение"
+              required
+            ></textarea>
+          </div>
           <div class="modal__form-submit">
             <button type="submit" class="modal__form-btn btn-hover">Отправить</button>
           </div>

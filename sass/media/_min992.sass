@@ -1,0 +1,48 @@
+@media (min-width: 992px) 
+  .title-hover
+    transition: .5s
+    &:hover
+      margin-left: 20px
+  .header
+    &-btn
+      transition: .3s all
+      &:hover
+        background-color: $bg-btn
+        box-shadow: inset 0 0 30px #BFE2FF
+        outline-color: rgba(255, 255, 255, 0)
+        outline-offset: 15px
+        color: $txt-base-light
+  .menu
+    &-list
+      &__item
+        &::before 
+          content: attr(data-hover)
+          color: $txt-base-light
+          position: absolute
+          opacity: 0
+          text-shadow: 1px 0 7px #000, 0 1px 7px #000, -1px 0 7px #000, 0 -1px 7px #000
+          transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg)
+          transition: transform 0.3s, opacity 0.3s
+          pointer-events: none
+        &:hover, &:focus
+          &::before
+            transform: scale(1) translateX(0px) translateY(1.5px) rotate(0deg)
+            opacity: 1
+  .recommend
+    &-content
+      &__more
+        transition: .3s all
+        &:hover
+          @include hover-btn
+    &-tabs
+      &__item
+        &:hover
+          background-color: #F5F5F5
+    &-block
+      &__text
+        transition: .2s
+        &:hover
+          color: #6E99AE
+          
+          
+    

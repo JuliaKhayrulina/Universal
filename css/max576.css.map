@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,KAAK;EACtB,AAAA,UAAU,CAAC;IACT,SAAS,EAAE,GAAG;GAAG;EAGhB,AAAD,kBAAS,CAAC;IACR,OAAO,EAAE,IAAI;GAEO;EADnB,AAAD,wBAAO,CAAC;IACN,OAAO,EAAE,IAAI;GAAG;EACnB,AAAD,eAAM,CAAC;IACL,KAAK,EAAE,IAAI;GAAG",
-    "sources": [
-        "../sass/media/max576.sass"
-    ],
-    "names": [],
-    "file": "max576.css"
-}

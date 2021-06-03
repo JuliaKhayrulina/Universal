@@ -17,7 +17,6 @@
     position: fixed
     top: 50%
     left: 50%
-    width: 40%
     max-width: 500px
     max-height: 100vh
     width: 60%
@@ -46,20 +45,21 @@
     text-transform: uppercase
     text-align: center
   &__form
+    display: flex
+    flex-direction: column
+    min-height: 500px
     &-input
       @include input
       width: 100%
-      margin-top: 15px
     &-message
       @include textarea
       width: 100%
-      margin-top: 15px
+      margin-bottom: 3px
     &-submit
       display: flex
       justify-content: space-between
     &-btn
       @include btn-form
-      margin-top: 15px 
   &__info
     margin-top: 17px
     font-weight: 700

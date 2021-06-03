@@ -12,11 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let content of contents) {
       content.classList.remove('recommend-content--show');
     }
+    for (let tab of tabs) {
+      tab.classList.remove('recommend-tabs__item--active');
+    }
     if (window.screen.width > 576) {
       const tab = this;
+      tab.classList.add('recommend-tabs__item--active');
       const tabAttr = tab.getAttribute('data-tab');
       const content = document.getElementById(`${tabAttr}`);
       content.classList.add('recommend-content--show');
+    } else {
+      window.location.href = 'https://mywebdiving.ru/tour-plan/';
     }
   }
   //==========mobile menu================//
@@ -35,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
   //===================modal windows===========================//
   const openModalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeModalBtn = document.querySelector('.modal__close');
-  const closeModalButton = document.querySelector('.close');
   const modalOverlay = document.querySelectorAll('.modal__overlay');
 
   //открытие по кнопкам
@@ -59,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   //закрытие по кнопкам
   closeModalBtn.addEventListener('click', closeModal);
-  closeModalButton.addEventListener('click', closeModal);
 
   //закрытие вне модального окна
   for (let overlay of modalOverlay) {
