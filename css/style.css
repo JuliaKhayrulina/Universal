@@ -169,6 +169,8 @@ input {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35)));
   background: -webkit-linear-gradient(bottom, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
   background: -o-linear-gradient(bottom, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
@@ -776,6 +778,10 @@ input {
   .recommend-tabs__item-text {
     font-size: 14px;
   }
+  .modal__dialog {
+    width: 65vw;
+    padding: 33px 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -812,6 +818,10 @@ input {
             justify-content: space-between;
     border-bottom: 1px solid #d9dadb;
   }
+  .modal__dialog {
+    width: 80vw;
+    padding: 33px 40px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -833,6 +843,10 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .modal__dialog {
+    width: 95vw;
+    padding: 18px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
