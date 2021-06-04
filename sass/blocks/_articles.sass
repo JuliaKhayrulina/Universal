@@ -1,0 +1,206 @@
+.articles
+  background-color: $bg-light
+  &-grid
+    padding-top: 313px
+    padding-bottom: 60px
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(4, minmax(170px, min-content))
+    row-gap: 30px
+    column-gap: 29px
+    &__item
+      &:nth-child(1)
+        grid-column: 1/span 2
+        grid-row: 1/span 2
+      &:nth-child(2)
+        grid-column: 3/span 1
+        grid-row: 1/span 2
+      &:nth-child(3)
+        grid-column: 4/span 1
+        grid-row: 1/span 1
+      &:nth-child(4)
+        grid-column: 1/span 1
+        grid-row: 3/span 2
+      &:nth-child(5)
+        grid-column: 2/span 1
+        grid-row: 3/span 1
+      &:nth-child(6)
+        grid-column: 3/span 1
+        grid-row: 3/span 1
+      &:nth-child(7)
+        grid-column: 4/span 1
+        grid-row: 2/span 2
+      &:nth-child(8)
+        grid-column: 2/span 1
+        grid-row: 4/span 1
+      &:nth-child(9)
+        grid-column: 3/span 1
+        grid-row: 4/span 1
+      &:nth-child(10)
+        grid-column: 4/span 1
+        grid-row: 4/span 1
+
+  .about
+    overflow: hidden
+    border-radius: 10px
+    background-color: $txt-base-light
+    &-line
+      @include line-grey
+    &__title
+      font-family: RobotoSlab
+      @include font-param(1.13rem, 900, 25px)
+      color: $main-dark
+      margin-bottom: 5px
+    &-work
+      background-image: url('../img/articles/car.jpg')
+      background-repeat: no-repeat
+      background-position: right 15px
+      &__descr
+        padding: 35px 283px 48px 35px
+      &__theme
+        display: inline-block
+        margin-bottom: 20px
+        @include font-param(12px, 900, 15px)
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #6E99AE
+      &__link
+        &-title
+          display: block
+          margin-bottom: 25px
+          font-family: RobotoSlab
+          @include font-param(1.53rem, 700, 30px)
+          color: $main-dark
+      &__text
+        @include font-param(14px, 400, 20px)
+        color: #4B5157
+      &__author
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 12px 35px
+        color: $main-dark
+        &-avatar
+          width: 30px
+          height: 30px
+        &-name
+          @include font-param(14px, 900, 21px) 
+    &-portfolio
+      padding: 19px 26px 26px 25px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      background: linear-gradient(0deg, rgba(64,48,61,0.35), rgba(64,48,61,0.35)),url('../img/articles/light-bulb.jpg')
+      &__label
+        width: 92px
+        padding: 5px 12px
+        @include font-param(12px, 400, 15px)
+        color: $txt-base-light
+        background-color: #3DC47E
+        border-radius: 3px
+      &__theme
+        @include font-param(12px, 400, 15px)
+        color: #E7D9FF
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        margin-bottom: 21px
+      &__link
+        &-title
+          display: block
+          margin-bottom: 26px
+          font-family: RobotoSlab
+          @include font-param(1rem, 700, 25px)
+          letter-spacing: 0.5px
+          text-transform: uppercase
+      &__author
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-inner
+          flex-basis: 74%
+        &-public
+          display: flex
+          align-items: center
+          justify-content: space-between
+        &-name
+          @include font-param(14px, 400, 20px)
+          color: $txt-base-light
+          opacity: 0.85
+    &-checklist
+      position: relative
+      background-color: #3BBDC4
+      &__descr
+        padding: 25px 25px 19px
+      &__img
+        position: absolute
+        top: 18px
+        right: 10px
+        opacity: 0.5
+      &__title
+        margin-bottom: 10px
+        font-family: RobotoSlab
+        @include font-param(16px, 700, 25px)
+        color: $txt-base-light
+      &__text
+        @include font-param(14px, 400, 20px)
+        color: #C1F4F5
+      &__download
+        display: flex 
+        align-items: center
+        justify-content: center
+        padding-top: 12px
+        padding-bottom: 8px
+        &-icon
+          margin-right: 10px
+    &-tools
+      &__descr
+        height: 275px
+      &__img
+        width: 100%
+        height: 100%
+      &__title
+        padding: 15px 25px 30px
+        max-width: 83%
+        font-family: RobotoSlab
+        @include font-param(16px, 700, 25px)
+        color: $main-dark
+    &-customers, &-reference, &-stress, &-methods
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 25px 25px 30px
+      &__theme
+        @include font-param(14px, 400, 20px)
+        color: $txt-base-dark
+    &-tags
+      &__title
+        padding: 20px 25px 19px
+        @include font-param(1rem, 900, 20px)
+        color: $main-dark
+        text-transform: uppercase
+      &__links
+        padding: 25px 21px 30px 25px
+        height: 310px
+        display: flex
+        flex-wrap: wrap
+        align-content: space-between
+        &-tag
+          display: inline-block
+          padding: 4px 14px
+          margin-right: 10px
+          border-radius: 6px
+          border: 1px solid #D9DADB
+          @include font-param(1rem, 900, 20px)
+          color: $main-dark
+    &-social
+      padding: 30px 36px 40px 37px
+      &__title
+        margin-bottom: 25px
+        font-family: RobotoSlab
+        @include font-param(1.43rem, 900, 25px)
+        color: $main-dark
+        text-align: center
+
+
+ 

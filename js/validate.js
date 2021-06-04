@@ -3,9 +3,9 @@ $(document).ready(function () {
 
   $('.form').each(function () {
     $(this).validate({
-      errorPlacement: function (error, element) {
-        error.appendTo($('#newsletterValidate'));
-      },
+      // errorPlacement: function (error, element) {
+      //   error.appendTo($('#newsletterValidate'));
+      // },
       errorClass: 'invalid',
       rules: {
         name: {
