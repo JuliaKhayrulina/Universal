@@ -72,6 +72,9 @@ input
     margin-right: 5px
   &__numb
     opacity: 0.4
+    &--dark
+      color: #939699
+      opacity: 1
 
 .social
   display: flex
@@ -93,7 +96,23 @@ input
       background-color: #1DA1F2  
     &--youtube
       background-color: #FF0000
-
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 154px
+  height: 40px
+  @include font-param(1rem, 900, 20px)
+  border-radius: 20px
+  background-color: $bg-btn
+  &-icon
+    width: 20px
+    height: 20px
+    margin-left: 5px
+    background: url('../img/svg/Arrow.svg') center center no-repeat
+  &--read
+    width: 161px
+    height: 40px
 
 
 

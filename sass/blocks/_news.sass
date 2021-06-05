@@ -1,0 +1,61 @@
+.news
+  padding: 60px 0
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: start
+    flex-wrap: wrap
+  &-cards
+    width: 74.39%
+    padding-left: 25px
+    padding-right: 25px
+    display: flex
+    flex-direction: column
+    background-color: orange
+  &-card 
+    padding-top: 25px
+    padding-bottom: 25px
+    display: flex
+    @include line-grey 
+    &__content
+      padding-left: 25px
+      position: relative
+    &__theme
+      @include font-param(12px, 900, 15px)
+      text-transform: uppercase
+      &--blue
+        color: #4592FF
+      &--aquamarine
+        color: #3BBDC4
+      &--red
+        color: #FF4F52
+      &--green
+        color: #3BBDC4
+      &--purple
+        color: #AC8EE3
+    &__link
+      font-family: RobotoSlab
+      @include font-param(1.43rem, 700, 25px)
+      color: $main-dark
+    &__text
+      @include font-param(14px, 400, 20px)
+      color: $txt-base-dark
+    &__bookmark
+      position: absolute
+      top: 0
+      right: 0
+      fill: #BCBFC2
+    &__public
+      display: flex
+      width: 155px
+  &__image
+    width: 336px
+    height: 195px
+    object-fit: cover
+  &-side
+    width: 23.1%
+    background-color: grey
+    &__img
+      width: 60px
+      height: 60px
+      object-fit: cover

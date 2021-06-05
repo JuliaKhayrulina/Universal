@@ -119,9 +119,9 @@
                     Как использовать CSS float после того, как вышел Flexbox
                   </h2>
                 </a>
-                <a href="#" class="recommend-content__more">
+                <a href="#" class="btn">
                   Читать далее
-                  <span class="recommend-content__more-icon"></span>
+                  <span class="btn-icon"></span>
                 </a>
               </div>
             </div>
@@ -167,9 +167,9 @@
                     Расширение Chrome защищает от атак
                   </h2>
                 </a>
-                <a href="#" class="recommend-content__more">
+                <a href="#" class="btn">
                   Читать далее
-                  <span class="recommend-content__more-icon"></span>
+                  <span class="btn-icon"></span>
                 </a>
               </div>
             </div>
@@ -215,9 +215,9 @@
                     Правильно вставляем картинку на сайт для Retina дисплея
                   </h2>
                 </a>
-                <a href="#" class="recommend-content__more">
+                <a href="#" class="btn">
                   Читать далее
-                  <span class="recommend-content__more-icon"></span>
+                  <span class="btn-icon"></span>
                 </a>
               </div>
             </div>
@@ -261,9 +261,9 @@
                 <a href="#" class="recommend-content__title-link">
                   <h2 class="title-hover recommend-content__title">ТОП-10 плагинов для Figma</h2>
                 </a>
-                <a href="#" class="recommend-content__more">
+                <a href="#" class="btn">
                   Читать далее
-                  <span class="recommend-content__more-icon"></span>
+                  <span class="btn-icon"></span>
                 </a>
               </div>
             </div>
@@ -309,9 +309,9 @@
                     Возможности CSS Grid Layout , которые уже можно применять
                   </h2>
                 </a>
-                <a href="#" class="recommend-content__more">
+                <a href="#" class="btn">
                   Читать далее
-                  <span class="recommend-content__more-icon"></span>
+                  <span class="btn-icon"></span>
                 </a>
               </div>
             </div>
@@ -492,7 +492,7 @@
               </picture>
               <div class="about-portfolio__author-inner">
                 <span class="about-portfolio__author-name"> Сара Женникова</span>
-                <div class="about-portfolio__author-public">
+                <div class="public about-portfolio__author-public">
                   <span class="date date--light"
                     ><time datetime="2021-09-25">25 сентября</time></span
                   >
@@ -504,7 +504,7 @@
                   </div>
                   <div class="likes">
                     <span class="likes__icon">
-                      <img src="./img/svg/heart.svg" alt="comment" />
+                      <img src="./img/svg/heart.svg" alt="likes" />
                     </span>
                     <span class="likes__numb">832</span>
                   </div>
@@ -531,7 +531,6 @@
           <div class="about-tools__descr">
             <picture>
               <source
-                class="about-tools__img"
                 srcset="./img/articles/notebook-w.webp"
                 class="about-portfolio__img"
                 type="image/webp"
@@ -653,6 +652,430 @@
               />
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="salary">
+      <div class="container salary-wrapper">
+        <h1 class="salary__title">
+          Расследование недели: сколько зарабатывает&nbsp;веб разработчик в Москве
+        </h1>
+        <a href="#" class="btn btn--read">
+          Читать статью
+          <span class="btn-icon"></span>
+        </a>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container news-wrapper">
+        <div class="news-cards">
+          <div class="news__card news-card">
+            <a href="#" class="news__link">
+              <picture>
+                <!-- <source
+                  class="news__image"
+                  type="image/webp"
+                  data-srcset="img/news/image-1.webp"
+                  srcset="img/news/image-1.webp"
+                />
+                <source
+                  class="news__image"
+                  type="image/jpeg"
+                  data-srcset="img/news/image-1.jpg"
+                  srcset="img/news/image-1.jpg"
+                /> -->
+                <img
+                  loading="lazy"
+                  src="img/news/news-one.jpg"
+                  alt="новости: новый налоговый режим для фрилансеров"
+                  class="news__image"
+                />
+              </picture>
+            </a>
+            <div class="news-card__content">
+              <span class="news-card__theme news-card__theme--blue">Новости</span>
+              <svg
+                class="news-card__bookmark"
+                width="14"
+                height="18"
+                viewBox="0 0 14 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z"
+                />
+              </svg>
+              <h3 class="news-card__title">
+                <a href="#" class="news-card__link"
+                  >Новый налоговый режим для фрилансеров — налог на проф. доход</a
+                >
+              </h3>
+              <p class="news-card__text">
+                Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто
+                работает неофициально. Разобрались, как работает режим и кому он подходит, а кому
+                нет.
+              </p>
+              <div class="public news-card__public">
+                <span class="date"><time datetime="2021-08-06">6 августа</time></span>
+                <div class="comments">
+                  <span class="comments__icon">
+                    <img src="./img/svg/comment.svg" alt="comment" />
+                  </span>
+                  <span class="comments__numb">342</span>
+                </div>
+                <div class="likes likes--dark">
+                  <span class="likes__icon">
+                    <img src="./img/svg/heart-dark.svg" alt="likes" />
+                  </span>
+                  <span class="likes__numb likes__numb--dark">830</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__card news-card">
+            <a href="#" class="news__link">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/news/news-two.jpg"
+                  alt="мнения: беплатные курсы"
+                  class="news__image"
+                />
+              </picture>
+            </a>
+            <div class="news-card__content">
+              <span class="news-card__theme news-card__theme--aquamarine">Мнения</span>
+              <svg
+                class="news-card__bookmark"
+                width="14"
+                height="18"
+                viewBox="0 0 14 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z"
+                />
+              </svg>
+              <h3 class="news-card__title">
+                <a href="#" class="news-card__link"
+                  >Платные курсы — это не быстрый способ выйти на нужный уровень</a
+                >
+              </h3>
+              <p class="news-card__text">
+                Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс,
+                то это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это
+                практика.
+              </p>
+              <div class="public news-card__public">
+                <span class="date"><time datetime="2021-10-07">7 октября</time></span>
+                <div class="comments">
+                  <span class="comments__icon">
+                    <img src="./img/svg/comment.svg" alt="comment" />
+                  </span>
+                  <span class="comments__numb">27</span>
+                </div>
+                <div class="likes likes--dark">
+                  <span class="likes__icon">
+                    <img src="./img/svg/heart-dark.svg" alt="likes" />
+                  </span>
+                  <span class="likes__numb likes__numb--dark">129</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__card news-card">
+            <a href="#" class="news__link">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/news/news-three.jpg"
+                  alt="горячее: стали недоступны серверы Telegram"
+                  class="news__image"
+                />
+              </picture>
+            </a>
+            <div class="news-card__content">
+              <span class="news-card__theme news-card__theme--red">Горячее</span>
+              <svg
+                class="news-card__bookmark"
+                width="14"
+                height="18"
+                viewBox="0 0 14 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z"
+                />
+              </svg>
+
+              <h3 class="news-card__title">
+                <a href="#" class="news-card__link"
+                  >Из-за ограничений стали недоступны серверы Telegram. К чему это может...
+                </a>
+              </h3>
+              <p class="news-card__text">
+                Сегодня мы узнали, что серверы Telegram не доступны на территории России.
+                Разобрались, чем это грозит вам, если ваш бизнес зависит от этого мессенджера.
+              </p>
+              <div class="public news-card__public">
+                <span class="date"><time datetime="2021-12-12">12 декабря</time></span>
+                <div class="comments">
+                  <span class="comments__icon">
+                    <img src="./img/svg/comment.svg" alt="comment" />
+                  </span>
+                  <span class="comments__numb">30</span>
+                </div>
+                <div class="likes likes--dark">
+                  <span class="likes__icon">
+                    <img src="./img/svg/heart-dark.svg" alt="likes" />
+                  </span>
+                  <span class="likes__numb likes__numb--dark">284</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__card news-card">
+            <a href="#" class="news__link">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/news/news-four.jpg"
+                  alt="мнения: в портфолио могут быть фейковые проекты"
+                  class="news__image"
+                />
+              </picture>
+            </a>
+            <div class="news-card__content">
+              <span class="news-card__theme news-card__theme--green">Мнения</span>
+              <svg
+                class="news-card__bookmark"
+                width="14"
+                height="18"
+                viewBox="0 0 14 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z"
+                />
+              </svg>
+
+              <h3 class="news-card__title">
+                <a href="#" class="news-card__link"
+                  >В вашем портфолио могут быть фейковые проекты, если вы сделали...</a
+                >
+              </h3>
+              <p class="news-card__text">
+                Один из читателей предположил, что если в портфолио положить несуществующий проект,
+                то ничего страшного не произойдет. Он провел эксперимент и потенциальные
+                заказчики...
+              </p>
+              <div class="public news-card__public">
+                <span class="date"><time datetime="2021-07-20">20 июля</time></span>
+                <div class="comments">
+                  <span class="comments__icon">
+                    <img src="./img/svg/comment.svg" alt="comment" />
+                  </span>
+                  <span class="comments__numb">102</span>
+                </div>
+                <div class="likes likes--dark">
+                  <span class="likes__icon">
+                    <img src="./img/svg/heart-dark.svg" alt="likes" />
+                  </span>
+                  <span class="likes__numb likes__numb--dark">1,293</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__card news-card">
+            <a href="#" class="news__link">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/news/news-five.jpg"
+                  alt="Список стран, куда можно улететь"
+                  class="news__image"
+                />
+              </picture>
+            </a>
+            <div class="news-card__content">
+              <span class="news-card__theme news-card__theme--red">Горячее</span>
+              <svg
+                class="news-card__bookmark"
+                width="14"
+                height="18"
+                viewBox="0 0 14 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z"
+                />
+              </svg>
+
+              <h3 class="news-card__title">
+                <a href="#" class="news-card__link">Список стран, куда можно улететь</a>
+              </h3>
+              <p class="news-card__text">
+                Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала
+                посмотрите на список стран, который мы подготовили для вас. Внутри важная информация
+                про...
+              </p>
+              <div class="public news-card__public">
+                <span class="date"><time datetime="2021-10-22">22 октября</time></span>
+                <div class="comments">
+                  <span class="comments__icon">
+                    <img src="./img/svg/comment.svg" alt="comment" />
+                  </span>
+                  <span class="comments__numb">5</span>
+                </div>
+                <div class="likes likes--dark">
+                  <span class="likes__icon">
+                    <img src="./img/svg/heart-dark.svg" alt="likes" />
+                  </span>
+                  <span class="likes__numb likes__numb--dark">82</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news__card news-card">
+            <a href="#" class="news__link">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/news/news-six.jpg"
+                  alt="подборки: список ютуб каналов для начинающих разработчиков"
+                  class="news__image"
+                />
+              </picture>
+            </a>
+            <div class="news-card__content">
+              <span class="news-card__theme news-card__theme--purple">Подборки</span>
+              <svg
+                class="news-card__bookmark"
+                width="14"
+                height="18"
+                viewBox="0 0 14 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 0H12C13.1046 0 14 0.89543 14 2V18L7.09495 13L0 18V2C0 0.89543 0.89543 0 2 0Z"
+                />
+              </svg>
+
+              <h3 class="news-card__title">
+                <a href="#" class="news-card__link"
+                  >Список Youtube каналов для тех, кто только начинает изучать разработку</a
+                >
+              </h3>
+              <p class="news-card__text">
+                Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы,
+                посвященные айти. Тут можно найти видеоуроки, лекции и бесплатные курсы.
+              </p>
+              <div class="public news-card__public">
+                <span class="date"><time datetime="2021-10-26">26 октября</time></span>
+                <div class="comments">
+                  <span class="comments__icon">
+                    <img src="./img/svg/comment.svg" alt="comment" />
+                  </span>
+                  <span class="comments__numb">101</span>
+                </div>
+                <div class="likes likes--dark">
+                  <span class="likes__icon">
+                    <img src="./img/svg/heart-dark.svg" alt="likes" />
+                  </span>
+                  <span class="likes__numb likes__numb--dark">432</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-side">
+          <span class="news-side__title">Недавно опубликовано</span>
+          <div class="news-side__posts">
+            <a href="#" class="news-side__post">
+              <img src="img/news/news-side-one.jpg" alt="news-side one" class="news-side__img" />
+              <div class="news-side__info">
+                <span class="news-side__title">Работа на удаленке, как это теперь</span>
+                <span class="date"><time datetime="2021-12-31">15 минут назад</time></span>
+              </div>
+            </a>
+
+            <a href="#" class="news-side__post">
+              <img src="img/news/news-side-two.jpg" alt="news-side two" class="news-side__img" />
+              <div class="news-side__info">
+                <span class="news-side__title">Для чего нужен Node.js и с чем...</span>
+                <span class="date"><time datetime="2021-12-31">32 минуты назад</time></span>
+              </div>
+            </a>
+
+            <a href="#" class="news-side__post">
+              <img
+                src="img/news/news-side-three.jpg"
+                alt="news-side three"
+                class="news-side__img"
+              />
+              <div class="news-side__info">
+                <span class="news-side__title">Работа в Google: собеседования и...</span>
+                <span class="date"><time datetime="2021-12-31">38 минут назад</time></span>
+              </div>
+            </a>
+
+            <a href="#" class="news-side__post">
+              <img src="img/news/news-side-four.jpg" alt="news-side four" class="news-side__img" />
+              <div class="news-side__info">
+                <span class="news-side__title">Переезд в Нью Йорк для работы по...</span>
+                <span class="date"><time datetime="2021-12-31">53 минуты назад</time></span>
+              </div>
+            </a>
+
+            <a href="#" class="news-side__post">
+              <img src="img/news/news-side-five.jpg" alt="news-side five" class="news-side__img" />
+              <div class="news-side__info">
+                <span class="news-side__title">Почему родители против того, чтобы...</span>
+                <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
+              </div>
+            </a>
+
+            <a href="#" class="news-side__post">
+              <img src="img/news/news-side-six.jpg" alt="news-side six" class="news-side__img" />
+              <div class="news-side__info">
+                <span class="news-side__title">Прокрастинация: побороть отклады...</span>
+                <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
+              </div>
+            </a>
+
+            <a href="#" class="news-side__post">
+              <img
+                src="img/news/news-side-seven.jpg"
+                alt="news-side seven"
+                class="news-side__img"
+              />
+              <div class="news-side__info">
+                <span class="news-side__title">Правки от заказчика могут быть...</span>
+                <span class="date"><time datetime="2021-12-31">2 часа назад</time></span>
+              </div>
+            </a>
+          </div>
+
+          <a href="#" class="news-side__more">Read more</a>
         </div>
       </div>
     </section>
