@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/fonts.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Universal</title>
@@ -613,7 +618,7 @@
               rel="nofollow noopener"
             >
               <img
-                src="./img/svg/facebook.svg"
+                src="./img/svg/Facebook.svg"
                 alt="icon: facebook"
                 class="social__icon"
                 width="20"
@@ -628,7 +633,7 @@
               rel="nofollow noopener"
             >
               <img
-                src="./img/svg/twitter.svg"
+                src="./img/svg/Twitter.svg"
                 alt="icon:twitter"
                 class="social__icon"
                 width="20"
@@ -643,7 +648,7 @@
               rel="nofollow noopener"
             >
               <img
-                src="./img/svg/youtube.svg"
+                src="./img/svg/YouTube.svg"
                 alt="icon: youtube"
                 class="social__icon"
                 width="21"
@@ -658,7 +663,7 @@
     <section class="salary">
       <div class="container salary-wrapper">
         <h1 class="salary__title">
-          Расследование недели: сколько зарабатывает&nbsp;веб разработчик в Москве
+          Расследование недели: сколько зарабатывает&nbsp;веб разработчик в&nbsp;Москве
         </h1>
         <a href="#" class="btn btn--read">
           Читать статью
@@ -672,18 +677,6 @@
           <div class="news__card news-card">
             <a href="#" class="news__link">
               <picture>
-                <!-- <source
-                  class="news__image"
-                  type="image/webp"
-                  data-srcset="img/news/image-1.webp"
-                  srcset="img/news/image-1.webp"
-                />
-                <source
-                  class="news__image"
-                  type="image/jpeg"
-                  data-srcset="img/news/image-1.jpg"
-                  srcset="img/news/image-1.jpg"
-                /> -->
                 <img
                   loading="lazy"
                   src="img/news/news-one.jpg"
@@ -719,7 +712,9 @@
                 нет.
               </p>
               <div class="public news-card__public">
-                <span class="date"><time datetime="2021-08-06">6 августа</time></span>
+                <span class="date news-card__date"
+                  ><time datetime="2021-08-06">6 августа</time></span
+                >
                 <div class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
@@ -768,12 +763,14 @@
                 >
               </h3>
               <p class="news-card__text">
-                Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс,
-                то это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это
-                практика.
+                Среди новичков распространено мнение, что если пройти какой&nbsp;-&nbsp;то крутой
+                онлайн-курс, то это решит все проблемы. Но они не берут в расчет, что лучшее
+                обучение — это практика.
               </p>
               <div class="public news-card__public">
-                <span class="date"><time datetime="2021-10-07">7 октября</time></span>
+                <span class="date news-card__date"
+                  ><time datetime="2021-10-07">7 октября</time></span
+                >
                 <div class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
@@ -827,7 +824,9 @@
                 Разобрались, чем это грозит вам, если ваш бизнес зависит от этого мессенджера.
               </p>
               <div class="public news-card__public">
-                <span class="date"><time datetime="2021-12-12">12 декабря</time></span>
+                <span class="date news-card__date"
+                  ><time datetime="2021-12-12">12 декабря</time></span
+                >
                 <div class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
@@ -882,7 +881,7 @@
                 заказчики...
               </p>
               <div class="public news-card__public">
-                <span class="date"><time datetime="2021-07-20">20 июля</time></span>
+                <span class="date news-card__date"><time datetime="2021-07-20">20 июля</time></span>
                 <div class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
@@ -934,7 +933,7 @@
                 посмотрите на список стран, который мы подготовили для вас. Внутри важная информация
                 про...
               </p>
-              <div class="public news-card__public">
+              <div class="public news-card__public news-card__public--mt">
                 <span class="date"><time datetime="2021-10-22">22 октября</time></span>
                 <div class="comments">
                   <span class="comments__icon">
@@ -1008,16 +1007,15 @@
         </div>
 
         <div class="news-side">
-          <span class="news-side__title">Недавно опубликовано</span>
+          <span class="news-side__subtitle">Недавно опубликовано</span>
           <div class="news-side__posts">
-            <a href="#" class="news-side__post">
+            <a href="#" class="news-side__post news-side__post--active">
               <img src="img/news/news-side-one.jpg" alt="news-side one" class="news-side__img" />
               <div class="news-side__info">
                 <span class="news-side__title">Работа на удаленке, как это теперь</span>
                 <span class="date"><time datetime="2021-12-31">15 минут назад</time></span>
               </div>
             </a>
-
             <a href="#" class="news-side__post">
               <img src="img/news/news-side-two.jpg" alt="news-side two" class="news-side__img" />
               <div class="news-side__info">
@@ -1025,7 +1023,6 @@
                 <span class="date"><time datetime="2021-12-31">32 минуты назад</time></span>
               </div>
             </a>
-
             <a href="#" class="news-side__post">
               <img
                 src="img/news/news-side-three.jpg"
@@ -1037,7 +1034,6 @@
                 <span class="date"><time datetime="2021-12-31">38 минут назад</time></span>
               </div>
             </a>
-
             <a href="#" class="news-side__post">
               <img src="img/news/news-side-four.jpg" alt="news-side four" class="news-side__img" />
               <div class="news-side__info">
@@ -1045,7 +1041,6 @@
                 <span class="date"><time datetime="2021-12-31">53 минуты назад</time></span>
               </div>
             </a>
-
             <a href="#" class="news-side__post">
               <img src="img/news/news-side-five.jpg" alt="news-side five" class="news-side__img" />
               <div class="news-side__info">
@@ -1053,7 +1048,6 @@
                 <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
               </div>
             </a>
-
             <a href="#" class="news-side__post">
               <img src="img/news/news-side-six.jpg" alt="news-side six" class="news-side__img" />
               <div class="news-side__info">
@@ -1061,7 +1055,6 @@
                 <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
               </div>
             </a>
-
             <a href="#" class="news-side__post">
               <img
                 src="img/news/news-side-seven.jpg"
@@ -1075,7 +1068,11 @@
             </a>
           </div>
 
-          <a href="#" class="news-side__more">Read more</a>
+          <div class="news-side__slider">
+            <img src="./img/svg/next.svg" alt="prev" class="prev" width="25" height="25" />
+            <a href="#" class="news-side__more">Read more</a>
+            <img src="./img/svg/next.svg" alt="next" class="next" width="25" height="25" />
+          </div>
         </div>
       </div>
     </section>

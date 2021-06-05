@@ -99,3 +99,35 @@
           margin-left: 7px
     &-social
       padding: 25px 36px 25px 37px
+  
+  .news
+    &-wrapper
+      justify-content: center
+    &-cards
+      width: 100%
+      margin-bottom: 40px 
+    &-side
+      width: 80%
+      &__posts
+        display: flex
+        flex-wrap: wrap
+        height: 115px
+      &__post
+        display: none
+        width: 100%
+        &--active
+          display: flex
+          height: 100%
+      &__info
+        justify-content: space-around
+        &::after
+          display: none
+      &__img
+        width: 20%
+        height: 80px
+      &__slider
+        display: flex
+        justify-content: space-around
+        align-items: center
+  .next, .prev
+    display: block

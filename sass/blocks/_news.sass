@@ -1,5 +1,7 @@
 .news
-  padding: 60px 0
+  padding-top: 60px
+  padding-bottom: 60px
+  background-color: $bg-light
   &-wrapper
     display: flex
     justify-content: space-between
@@ -8,18 +10,22 @@
   &-cards
     width: 74.39%
     padding-left: 25px
-    padding-right: 25px
+    padding-right: 24px
     display: flex
     flex-direction: column
-    background-color: orange
+    border-radius: 8px
+    background-color: $txt-base-light 
   &-card 
-    padding-top: 25px
+    padding-top: 24px
     padding-bottom: 25px
     display: flex
-    @include line-grey 
+    @include line-grey
     &__content
-      padding-left: 25px
+      padding: 5px 0 5px 25px
       position: relative
+      display: flex
+      flex-direction: column
+      justify-content: space-between
     &__theme
       @include font-param(12px, 900, 15px)
       text-transform: uppercase
@@ -33,6 +39,8 @@
         color: #3BBDC4
       &--purple
         color: #AC8EE3
+    &__date
+      margin-right: 12px
     &__link
       font-family: RobotoSlab
       @include font-param(1.43rem, 700, 25px)
@@ -42,20 +50,80 @@
       color: $txt-base-dark
     &__bookmark
       position: absolute
-      top: 0
-      right: 0
+      top: 1px
+      right: 3px
+      cursor: pointer
       fill: #BCBFC2
+      &--active
+        fill: red
     &__public
       display: flex
-      width: 155px
+      margin-top: 4px
+      &--mt
+        margin-top: 26px
+  &__link
+    width: 336px
+    height: 195px
   &__image
     width: 336px
     height: 195px
     object-fit: cover
+
   &-side
     width: 23.1%
-    background-color: grey
+    display: flex
+    flex-direction: column
+    border-radius: 8px
+    background-color: $txt-base-light 
+    counter-reset: section
+    &__post
+      margin: 0 25px
+      padding: 17px 0
+      display: flex
+      &:not(&:last-child)
+        @include line-grey
+    &__info
+      position: relative
+      padding-left: 10px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      &::after
+        content: ' '
+        counter-increment: section
+        content: counters(section, ".") 
+        position: absolute
+        top: 3px
+        right: 0
+        @include font-param(5rem, 900, 50px)
+        color: $main-dark
+        font-style: italic
+        opacity: 0.1
+    &__subtitle
+      padding: 20px 25px 19px
+      @include font-param(14px, 900, 20px)
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $main-dark
+      @include line-grey
+    &__title
+      @include font-param(14px, 400, 20px)
+      color: $txt-base-dark
     &__img
       width: 60px
       height: 60px
       object-fit: cover
+    &__slider
+      padding: 11px 0 14px
+      border-top: 1px solid #d9dadb
+      text-align: center
+    &__more
+      @include font-param(14px, 900, 20px)
+      color: $main-dark
+      
+
+.next, .prev
+  display: none
+.prev
+  transform: rotate(180deg)
+      

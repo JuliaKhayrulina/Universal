@@ -46,22 +46,23 @@ input
     margin-right: 0
     color: $txt-base-light
     opacity: 0.4
-
 .comments
   display: flex
   align-items: center
+  justify-content: start
+  margin-right: 10px
   &__icon
     width: 15px
     height: 15px
     margin-right: 5px
   &--light
     opacity: 0.4
+    margin-right: 0
   &__numb
     @include font-param(12px, 400, 15px)
     color: #939699
     &--light
       color: $txt-base-light
-
 .likes
   display: flex
   align-items: center
@@ -75,7 +76,6 @@ input
     &--dark
       color: #939699
       opacity: 1
-
 .social
   display: flex
   justify-content: space-between
