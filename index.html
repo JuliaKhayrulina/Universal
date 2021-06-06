@@ -15,69 +15,71 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-wrapper header-wrapper--mobile-fixed">
-        <div class="header-logo">
-          <a href="index.html" class="header-logo__link">
-            <img
-              src="./img/svg/UNV.svg"
-              alt="Логотип: Universal"
-              class="header-logo__icon"
-              width="40"
-              height="40"
-            />
-            <img
-              src="./img/svg/Universal.svg"
-              alt="Логотип: Universal"
-              class="header-logo__name"
-              width="113"
-              height="19"
-            />
-          </a>
-        </div>
-        <nav class="menu header-menu">
-          <div class="container">
-            <ul class="menu-list">
-              <li class="menu-list__item menu-list__item--hidden menu-list__item--visible">
-                <button
-                  class="header-btn header-btn--visible"
-                  data-toggle="modal"
-                  data-href="#header-modal"
-                >
-                  оставить заявку
-                </button>
-              </li>
-              <li class="menu-list__item" data-hover="Статьи">
-                <a href="#" class="menu-list__item-link">Статьи</a>
-              </li>
-              <li class="menu-list__item" data-hover="Новости">
-                <a href="#" class="menu-list__item-link">Новости</a>
-              </li>
-              <li class="menu-list__item" data-hover="Горячее">
-                <a href="#" class="menu-list__item-link">Горячее</a>
-              </li>
-              <li class="menu-list__item" data-hover="HTML">
-                <a href="#" class="menu-list__item-link">HTML</a>
-              </li>
-              <li class="menu-list__item" data-hover="CSS">
-                <a href="#" class="menu-list__item-link">CSS</a>
-              </li>
-              <li class="menu-list__item" data-hover="JavaScript">
-                <a href="#" class="menu-list__item-link">JavaScript</a>
-              </li>
-              <li class="menu-list__item" data-hover="Web Design">
-                <a href="#" class="menu-list__item-link">Web Design</a>
-              </li>
-            </ul>
+      <div class="header-over header-over--mobile-fixed">
+        <div class="container header-wrapper">
+          <div class="header-logo">
+            <a href="index.html" class="header-logo__link">
+              <img
+                src="./img/svg/UNV.svg"
+                alt="Логотип: Universal"
+                class="header-logo__icon"
+                width="40"
+                height="40"
+              />
+              <img
+                src="./img/svg/Universal.svg"
+                alt="Логотип: Universal"
+                class="header-logo__name"
+                width="113"
+                height="19"
+              />
+            </a>
           </div>
-        </nav>
-        <button class="header-btn" data-toggle="modal" data-href="#header-modal">
-          оставить заявку
-        </button>
-        <button class="menu-button header__menu-button">
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-        </button>
+          <nav class="menu header-menu">
+            <div class="container">
+              <ul class="menu-list">
+                <li class="menu-list__item menu-list__item--hidden menu-list__item--visible">
+                  <button
+                    class="header-btn header-btn--visible"
+                    data-toggle="modal"
+                    data-href="#header-modal"
+                  >
+                    оставить заявку
+                  </button>
+                </li>
+                <li class="menu-list__item" data-hover="Статьи">
+                  <a href="#" class="menu-list__item-link">Статьи</a>
+                </li>
+                <li class="menu-list__item" data-hover="Новости">
+                  <a href="#" class="menu-list__item-link">Новости</a>
+                </li>
+                <li class="menu-list__item" data-hover="Горячее">
+                  <a href="#" class="menu-list__item-link">Горячее</a>
+                </li>
+                <li class="menu-list__item" data-hover="HTML">
+                  <a href="#" class="menu-list__item-link">HTML</a>
+                </li>
+                <li class="menu-list__item" data-hover="CSS">
+                  <a href="#" class="menu-list__item-link">CSS</a>
+                </li>
+                <li class="menu-list__item" data-hover="JavaScript">
+                  <a href="#" class="menu-list__item-link">JavaScript</a>
+                </li>
+                <li class="menu-list__item" data-hover="Web Design">
+                  <a href="#" class="menu-list__item-link">Web Design</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <button class="header-btn" data-toggle="modal" data-href="#header-modal">
+            оставить заявку
+          </button>
+          <button class="menu-button header__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
       </div>
     </header>
     <section class="recommend">
@@ -537,7 +539,7 @@
             <picture>
               <source
                 srcset="./img/articles/notebook-w.webp"
-                class="about-portfolio__img"
+                class="about-tools__img"
                 type="image/webp"
               />
               <img src="./img/articles/notebook.jpg" alt="notebook" class="about-tools__img" />
@@ -662,7 +664,7 @@
     </section>
     <section class="salary">
       <div class="container salary-wrapper">
-        <h1 class="salary__title">
+        <h1 class="title-hover salary__title">
           Расследование недели: сколько зарабатывает&nbsp;веб разработчик в&nbsp;Москве
         </h1>
         <a href="#" class="btn btn--read">
@@ -677,6 +679,7 @@
           <div class="news__card news-card">
             <a href="#" class="news__link">
               <picture>
+                <source class="news__image" type="image/webp" srcset="./img/news/news-one.webp" />
                 <img
                   loading="lazy"
                   src="img/news/news-one.jpg"
@@ -686,7 +689,7 @@
               </picture>
             </a>
             <div class="news-card__content">
-              <span class="news-card__theme news-card__theme--blue">Новости</span>
+              <a href="#" class="news-card__theme news-card__theme--blue">Новости</a>
               <svg
                 class="news-card__bookmark"
                 width="14"
@@ -715,24 +718,25 @@
                 <span class="date news-card__date"
                   ><time datetime="2021-08-06">6 августа</time></span
                 >
-                <div class="comments">
+                <a href="#" class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
                   </span>
                   <span class="comments__numb">342</span>
-                </div>
-                <div class="likes likes--dark">
+                </a>
+                <a href="#" class="likes likes--dark">
                   <span class="likes__icon">
                     <img src="./img/svg/heart-dark.svg" alt="likes" />
                   </span>
                   <span class="likes__numb likes__numb--dark">830</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="news__card news-card">
             <a href="#" class="news__link">
               <picture>
+                <source class="news__image" type="image/webp" srcset="./img/news/news-two.webp" />
                 <img
                   loading="lazy"
                   src="img/news/news-two.jpg"
@@ -742,7 +746,7 @@
               </picture>
             </a>
             <div class="news-card__content">
-              <span class="news-card__theme news-card__theme--aquamarine">Мнения</span>
+              <a href="#" class="news-card__theme news-card__theme--aquamarine">Мнения</a>
               <svg
                 class="news-card__bookmark"
                 width="14"
@@ -771,24 +775,25 @@
                 <span class="date news-card__date"
                   ><time datetime="2021-10-07">7 октября</time></span
                 >
-                <div class="comments">
+                <a href="#" class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
                   </span>
                   <span class="comments__numb">27</span>
-                </div>
-                <div class="likes likes--dark">
+                </a>
+                <a href="#" class="likes likes--dark">
                   <span class="likes__icon">
                     <img src="./img/svg/heart-dark.svg" alt="likes" />
                   </span>
                   <span class="likes__numb likes__numb--dark">129</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="news__card news-card">
             <a href="#" class="news__link">
               <picture>
+                <source class="news__image" type="image/webp" srcset="./img/news/news-three.webp" />
                 <img
                   loading="lazy"
                   src="img/news/news-three.jpg"
@@ -798,7 +803,7 @@
               </picture>
             </a>
             <div class="news-card__content">
-              <span class="news-card__theme news-card__theme--red">Горячее</span>
+              <a href="#" class="news-card__theme news-card__theme--red">Горячее</a>
               <svg
                 class="news-card__bookmark"
                 width="14"
@@ -827,24 +832,25 @@
                 <span class="date news-card__date"
                   ><time datetime="2021-12-12">12 декабря</time></span
                 >
-                <div class="comments">
+                <a href="#" class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
                   </span>
                   <span class="comments__numb">30</span>
-                </div>
-                <div class="likes likes--dark">
+                </a>
+                <a href="#" class="likes likes--dark">
                   <span class="likes__icon">
                     <img src="./img/svg/heart-dark.svg" alt="likes" />
                   </span>
                   <span class="likes__numb likes__numb--dark">284</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="news__card news-card">
             <a href="#" class="news__link">
               <picture>
+                <source class="news__image" type="image/webp" srcset="./img/news/news-four.webp" />
                 <img
                   loading="lazy"
                   src="img/news/news-four.jpg"
@@ -854,7 +860,7 @@
               </picture>
             </a>
             <div class="news-card__content">
-              <span class="news-card__theme news-card__theme--green">Мнения</span>
+              <a href="#" class="news-card__theme news-card__theme--green">Мнения</a>
               <svg
                 class="news-card__bookmark"
                 width="14"
@@ -882,24 +888,25 @@
               </p>
               <div class="public news-card__public">
                 <span class="date news-card__date"><time datetime="2021-07-20">20 июля</time></span>
-                <div class="comments">
+                <a href="#" class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
                   </span>
                   <span class="comments__numb">102</span>
-                </div>
-                <div class="likes likes--dark">
+                </a>
+                <a href="#" class="likes likes--dark">
                   <span class="likes__icon">
                     <img src="./img/svg/heart-dark.svg" alt="likes" />
                   </span>
                   <span class="likes__numb likes__numb--dark">1,293</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="news__card news-card">
             <a href="#" class="news__link">
               <picture>
+                <source class="news__image" type="image/webp" srcset="./img/news/news-five.webp" />
                 <img
                   loading="lazy"
                   src="img/news/news-five.jpg"
@@ -909,7 +916,7 @@
               </picture>
             </a>
             <div class="news-card__content">
-              <span class="news-card__theme news-card__theme--red">Горячее</span>
+              <a href="#" class="news-card__theme news-card__theme--red">Горячее</a>
               <svg
                 class="news-card__bookmark"
                 width="14"
@@ -935,24 +942,25 @@
               </p>
               <div class="public news-card__public news-card__public--mt">
                 <span class="date"><time datetime="2021-10-22">22 октября</time></span>
-                <div class="comments">
+                <a href="#" class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
                   </span>
                   <span class="comments__numb">5</span>
-                </div>
-                <div class="likes likes--dark">
+                </a>
+                <a href="#" class="likes likes--dark">
                   <span class="likes__icon">
                     <img src="./img/svg/heart-dark.svg" alt="likes" />
                   </span>
                   <span class="likes__numb likes__numb--dark">82</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="news__card news-card">
             <a href="#" class="news__link">
               <picture>
+                <source class="news__image" type="image/webp" srcset="./img/news/news-six.webp" />
                 <img
                   loading="lazy"
                   src="img/news/news-six.jpg"
@@ -962,7 +970,7 @@
               </picture>
             </a>
             <div class="news-card__content">
-              <span class="news-card__theme news-card__theme--purple">Подборки</span>
+              <a href="#" class="news-card__theme news-card__theme--purple">Подборки</a>
               <svg
                 class="news-card__bookmark"
                 width="14"
@@ -989,18 +997,18 @@
               </p>
               <div class="public news-card__public">
                 <span class="date"><time datetime="2021-10-26">26 октября</time></span>
-                <div class="comments">
+                <a href="#" class="comments">
                   <span class="comments__icon">
                     <img src="./img/svg/comment.svg" alt="comment" />
                   </span>
                   <span class="comments__numb">101</span>
-                </div>
-                <div class="likes likes--dark">
+                </a>
+                <a href="#" class="likes likes--dark">
                   <span class="likes__icon">
                     <img src="./img/svg/heart-dark.svg" alt="likes" />
                   </span>
                   <span class="likes__numb likes__numb--dark">432</span>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -1010,57 +1018,134 @@
           <span class="news-side__subtitle">Недавно опубликовано</span>
           <div class="news-side__posts">
             <a href="#" class="news-side__post news-side__post--active">
-              <img src="img/news/news-side-one.jpg" alt="news-side one" class="news-side__img" />
+              <picture>
+                <source
+                  class="news-side__img"
+                  type="image/webp"
+                  srcset="./img/news/news-side-one.webp"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/news/news-side-one.jpg"
+                  alt="news-side one"
+                  class="news-side__img"
+                />
+              </picture>
+
               <div class="news-side__info">
                 <span class="news-side__title">Работа на удаленке, как это теперь</span>
                 <span class="date"><time datetime="2021-12-31">15 минут назад</time></span>
               </div>
             </a>
             <a href="#" class="news-side__post">
-              <img src="img/news/news-side-two.jpg" alt="news-side two" class="news-side__img" />
+              <picture>
+                <source
+                  class="news-side__img"
+                  type="image/webp"
+                  srcset="./img/news/news-side-two.webp"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/news/news-side-two.jpg"
+                  alt="news-side two"
+                  class="news-side__img"
+                />
+              </picture>
               <div class="news-side__info">
                 <span class="news-side__title">Для чего нужен Node.js и с чем...</span>
                 <span class="date"><time datetime="2021-12-31">32 минуты назад</time></span>
               </div>
             </a>
             <a href="#" class="news-side__post">
-              <img
-                src="img/news/news-side-three.jpg"
-                alt="news-side three"
-                class="news-side__img"
-              />
+              <picture>
+                <source
+                  class="news-side__img"
+                  type="image/webp"
+                  srcset="./img/news/news-side-three.webp"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/news/news-side-three.jpg"
+                  alt="news-side three"
+                  class="news-side__img"
+                />
+              </picture>
               <div class="news-side__info">
                 <span class="news-side__title">Работа в Google: собеседования и...</span>
                 <span class="date"><time datetime="2021-12-31">38 минут назад</time></span>
               </div>
             </a>
             <a href="#" class="news-side__post">
-              <img src="img/news/news-side-four.jpg" alt="news-side four" class="news-side__img" />
+              <picture>
+                <source
+                  class="news-side__img"
+                  type="image/webp"
+                  srcset="./img/news/news-side-four.webp"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/news/news-side-four.jpg"
+                  alt="news-side four"
+                  class="news-side__img"
+                />
+              </picture>
               <div class="news-side__info">
                 <span class="news-side__title">Переезд в Нью Йорк для работы по...</span>
                 <span class="date"><time datetime="2021-12-31">53 минуты назад</time></span>
               </div>
             </a>
             <a href="#" class="news-side__post">
-              <img src="img/news/news-side-five.jpg" alt="news-side five" class="news-side__img" />
+              <picture>
+                <source
+                  class="news-side__img"
+                  type="image/webp"
+                  srcset="./img/news/news-side-five.webp"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/news/news-side-five.jpg"
+                  alt="news-side five"
+                  class="news-side__img"
+                />
+              </picture>
               <div class="news-side__info">
                 <span class="news-side__title">Почему родители против того, чтобы...</span>
                 <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
               </div>
             </a>
             <a href="#" class="news-side__post">
-              <img src="img/news/news-side-six.jpg" alt="news-side six" class="news-side__img" />
+              <picture>
+                <source
+                  class="news-side__img"
+                  type="image/webp"
+                  srcset="./img/news/news-side-six.webp"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/news/news-side-six.jpg"
+                  alt="news-side six"
+                  class="news-side__img"
+                />
+              </picture>
               <div class="news-side__info">
                 <span class="news-side__title">Прокрастинация: побороть отклады...</span>
                 <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
               </div>
             </a>
             <a href="#" class="news-side__post">
-              <img
-                src="img/news/news-side-seven.jpg"
-                alt="news-side seven"
-                class="news-side__img"
-              />
+              <picture>
+                <source
+                  class="news-side__img"
+                  type="image/webp"
+                  srcset="./img/news/news-side-seven.webp"
+                />
+                <img
+                  loading="lazy"
+                  src="./img/news/news-side-seven.jpg"
+                  alt="news-side seven"
+                  class="news-side__img"
+                />
+              </picture>
               <div class="news-side__info">
                 <span class="news-side__title">Правки от заказчика могут быть...</span>
                 <span class="date"><time datetime="2021-12-31">2 часа назад</time></span>

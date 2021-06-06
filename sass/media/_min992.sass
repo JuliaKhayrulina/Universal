@@ -28,12 +28,11 @@
           &::before
             transform: scale(1) translateX(0px) translateY(1.5px) rotate(0deg)
             opacity: 1
+  .btn
+    transition: .3s all
+    &:hover
+      @include hover-btn
   .recommend
-    &-content
-      &__more
-        transition: .3s all
-        &:hover
-          @include hover-btn
     &-tabs
       &__item
         &:hover
@@ -43,6 +42,34 @@
         transition: .2s
         &:hover
           color: #6E99AE
-          
-          
-    
+  .news
+    &-card
+      &__link
+        transition: .1s
+        &:hover
+          letter-spacing: 0.3px
+    &-side
+      &__info
+        transition: .1s
+        &:hover
+          letter-spacing: 0.3px
+  .about
+    transition: .2s
+    &:hover
+      box-shadow: 14px 20px 12px -5px rgba(62, 105, 144, 0.56)
+    &-tags
+      &__links
+        &-tag
+          transition: .2s
+          &:hover
+            background-color: #FFA34D
+    &-portfolio
+      &__title
+        transition: .2s
+        &:hover
+          color: #8ebeeb
+    &-work
+      &__title
+        transition: .2s
+        &:hover
+          color: $bg-btn

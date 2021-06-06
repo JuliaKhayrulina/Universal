@@ -66,11 +66,14 @@
       color: #6E99AE
     &__link
       &-title
+        max-width: 237px
+        height: 90px
         display: block
         margin-bottom: 25px
         font-family: RobotoSlab
         @include font-param(1.53rem, 700, 30px)
         color: $main-dark
+        overflow: hidden
     &__text
       @include font-param(14px, 400, 20px)
       color: #4B5157
@@ -109,7 +112,6 @@
       color: #E7D9FF
       letter-spacing: 0.5px
       text-transform: uppercase
-     
     &__link
       &-title
         display: block
@@ -124,7 +126,6 @@
       align-items: center
       &-inner
         width: 157px
-       
       &-public
         display: flex
         align-items: center

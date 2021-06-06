@@ -22,11 +22,13 @@
     @include line-grey
     &__content
       padding: 5px 0 5px 25px
+      max-width: 443px
       position: relative
       display: flex
       flex-direction: column
       justify-content: space-between
     &__theme
+      margin-bottom: 10px
       @include font-param(12px, 900, 15px)
       text-transform: uppercase
       &--blue
@@ -42,12 +44,16 @@
     &__date
       margin-right: 12px
     &__link
+      display: block
       font-family: RobotoSlab
       @include font-param(1.43rem, 700, 25px)
       color: $main-dark
     &__text
+      margin-bottom: 10px
       @include font-param(14px, 400, 20px)
       color: $txt-base-dark
+    &__title
+      margin-bottom: 10px
     &__bookmark
       position: absolute
       top: 1px
@@ -107,6 +113,10 @@
       color: $main-dark
       @include line-grey
     &__title
+      display: inline-block
+      width: 140px
+      height: 40px
+      overflow: hidden
       @include font-param(14px, 400, 20px)
       color: $txt-base-dark
     &__img
