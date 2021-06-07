@@ -1,0 +1,31 @@
+.subscription
+  padding: 60px 0 60px 
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    margin-bottom: 25px
+    font-family: RobotoSlab
+    @include font-param(2.86rem, 900, 50px)
+    color: $main-dark
+    text-align: center
+  &-form
+    display: flex
+    flex-wrap: wrap
+    &__input
+      width: 313px
+      height: 40px
+      margin-right: 10px
+      padding: 10px 15px
+      border-radius: 5px
+      border: 1px solid #E7E8E8
+      &::placeholder
+        color: #939699
+    &__btn
+      width: 136px
+  &__inner
+    display: flex
+    flex-direction: column
+    height: 50px
+    max-width: 322px

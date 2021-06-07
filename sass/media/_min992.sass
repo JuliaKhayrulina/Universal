@@ -60,25 +60,30 @@
         transition: .2s
         &:hover
           color: #8ebeeb
+
     &-work
-      &__title
+      &__title,
         transition: .2s
         &:hover
           color: #3bbdc4
+      &__author
+        transition: .2s
+        &:hover
+          color: #3290e7
 
-  .news
+  .news, .about
     &-card
       &__link
         transition: .2s
         &:hover
           color: #3bbdc4
-    &-side
-      &__more
+    &-side, &-checklist
+      &__more, &__download
         border-bottom-left-radius: 8px
         border-bottom-right-radius: 8px
         transition: .3s
         &:hover
-          background-color: #2e9096
+          background-color: #43dae2
       &__post
         &:hover
           .news-side__title
@@ -95,6 +100,50 @@
           color: #3bbdc4
         &--two
           &:hover
-            color: #e07b1c
-            
+            color: #f0821c
+    &-sliders
+      &__title
+        transition: .2s
+        &:hover
+          color: #f0821c
+
+  .hover
+    position: relative
+    &::after
+      display: block
+      position: absolute
+      left: 0
+      right: 0
+      width: 0
+      height: 3px
+      content: ""
+      transition: width 0.3s ease-out
+    &--red
+      &::after
+        background-color: #ff4f52
+    &--purple
+      &::after
+        background-color: #ac8ee3
+    &--blue
+      &::after
+        background-color: #4592ff
+    &--orange
+      &::after
+        background-color: #ffa34d
+    &--green
+      &::after
+        background-color: #3dc47e
+    &--grey
+      &::after
+        background-color: #6e99ae
+    &:hover
+      &::after
+        width: 100%
+  .footer
+    &-contacts
+      &__item
+        transition: .2s
+        &:hover
+          color: #ffa34d
+
 

@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/fonts.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
@@ -49,25 +44,25 @@
                   </button>
                 </li>
                 <li class="menu-list__item" data-hover="Статьи">
-                  <a href="#" class="menu-list__item-link">Статьи</a>
+                  <a href="#articles" class="menu-list__item-link scrollto">Статьи</a>
                 </li>
                 <li class="menu-list__item" data-hover="Новости">
-                  <a href="#" class="menu-list__item-link">Новости</a>
+                  <a href="#news" class="menu-list__item-link scrollto">Новости</a>
                 </li>
                 <li class="menu-list__item" data-hover="Горячее">
-                  <a href="#" class="menu-list__item-link">Горячее</a>
+                  <a href="#career" class="menu-list__item-link scrollto">Горячее</a>
                 </li>
                 <li class="menu-list__item" data-hover="HTML">
-                  <a href="#" class="menu-list__item-link">HTML</a>
+                  <a href="#footer" class="menu-list__item-link scrollto">HTML</a>
                 </li>
                 <li class="menu-list__item" data-hover="CSS">
-                  <a href="#" class="menu-list__item-link">CSS</a>
+                  <a href="#footer" class="menu-list__item-link scrollto">CSS</a>
                 </li>
                 <li class="menu-list__item" data-hover="JavaScript">
-                  <a href="#" class="menu-list__item-link">JavaScript</a>
+                  <a href="#footer" class="menu-list__item-link scrollto">JavaScript</a>
                 </li>
                 <li class="menu-list__item" data-hover="Web Design">
-                  <a href="#" class="menu-list__item-link">Web Design</a>
+                  <a href="#footer" class="menu-list__item-link scrollto">Web Design</a>
                 </li>
               </ul>
             </div>
@@ -437,7 +432,7 @@
         </div>
       </div>
     </section>
-    <section class="articles">
+    <section id="articles" class="articles">
       <div class="container articles-grid">
         <div class="articles-grid__item about about-work">
           <div class="about-work__descr">
@@ -674,7 +669,7 @@
         </a>
       </div>
     </section>
-    <section class="news">
+    <section id="news" class="news">
       <div class="container news-wrapper">
         <div class="news-cards">
           <div class="news__card news-card">
@@ -1159,7 +1154,7 @@
         </div>
       </div>
     </section>
-    <section class="career">
+    <section id="career" class="career">
       <div class="container career-grid">
         <div class="career-grid__item career-sliders">
           <!-- Slider main container -->
@@ -1415,6 +1410,240 @@
         </a>
       </div>
     </section>
+    <section class="subscription">
+      <div class="container subscription-wrapper">
+        <h2 class="subscription__title">Подпишитесь на&nbsp;нашу рассылку</h2>
+        <form action="send.php" method="POST" class="subscription-form form">
+          <div class="subscription__inner">
+            <input
+              id="newsletterInput-5"
+              type="email"
+              name="email"
+              class="input subscription-form__input"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <button class="btn btn-hover subscription-form__btn">Подписаться</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer-menu">
+          <div class="footer-menu__block footer-menu__block--red">
+            <h3 class="footer-menu__title">Новости</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--red">Обновления</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--red">Экспресс</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--red">Politics</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--red">Solar Eclipse</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu__block footer-menu__block--fiolet">
+            <h3 class="footer-menu__title">Статьи</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--purple">HTML</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--purple">CSS</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--purple">JavaScript</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--purple">Web Design</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu__block footer-menu__block--blue">
+            <h3 class="footer-menu__title">Видеоуроки</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--blue">Скринкасты</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--blue">Уроки</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--blue">Вебинары</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu__block footer-menu__block--orange">
+            <h3 class="footer-menu__title">Курсы</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--orange">Платные интенсивы</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--orange">Бесплатные стримы</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--orange">Мастер-классы</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--orange">Менторство</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--orange">Буткемпы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu__block footer-menu__block--green">
+            <h3 class="footer-menu__title">Информация</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--green">Политика данных</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--green">Оферта сайта</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--green">Реквизиты</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--green">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu__block footer-menu__block--grey">
+            <h3 class="footer-menu__title">Категории</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--grey">Популярное</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--grey">Горячее</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--grey">Подборки</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--grey">Мнения</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__item-link hover hover--grey">Карьера</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contacts">
+          <div class="footer-contacts__inner">
+            <div class="footer-logo">
+              <a href="index.html" class="footer-logo__link">
+                <img
+                  src="./img/svg/UNV-w.svg"
+                  alt="Логотип: Universal"
+                  class="footer-logo__icon"
+                  width="53"
+                  height="18"
+                />
+              </a>
+            </div>
+            <ul class="footer-contacts__list">
+              <li class="footer-contacts__item">
+                <a href="#" class="footer-contacts__item">Контакты</a>
+              </li>
+              <li class="footer-contacts__item">
+                <a href="#" class="footer-contacts__item">Работа у нас</a>
+              </li>
+              <li class="footer-contacts__item">
+                <a href="#" class="footer-contacts__item">Реклама</a>
+              </li>
+              <li class="footer-contacts__item">
+                <a
+                  href="#"
+                  class="footer-contacts__item"
+                  data-toggle="modal"
+                  data-href="#header-modal"
+                  >Обратная связь</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="social footer-social">
+            <a
+              href="https://www.facebook.com"
+              class="social__link social__link--facebook social__link--sm"
+              target="_blank"
+              rel="nofollow noopener"
+            >
+              <img
+                src="./img/svg/Facebook.svg"
+                alt="icon: facebook"
+                class="social__icon"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              class="social__link social__link--twitter social__link--sm"
+              target="_blank"
+              rel="nofollow noopener"
+            >
+              <img
+                src="./img/svg/Twitter.svg"
+                alt="icon:twitter"
+                class="social__icon"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com"
+              class="social__link social__link--youtube social__link--sm"
+              target="_blank"
+              rel="nofollow noopener"
+            >
+              <img
+                src="./img/svg/YouTube.svg"
+                alt="icon: youtube"
+                class="social__icon"
+                width="21"
+                height="21"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              class="social__link social__link--instagram social__link--sm"
+              target="_blank"
+              rel="nofollow noopener"
+            >
+              <img
+                src="./img/svg/Instagram.svg"
+                alt="icon: instagram"
+                class="social__icon"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="footer-copyright__text">
+            Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб
+            разработке: статьи, новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте
+            бесплатны, но при копировании, указывайте ссылку.
+          </p>
+          <span class="footer-copyright__info">© 2020 Universal Magazine</span>
+        </div>
+      </div>
+    </footer>
     <div class="modal" id="header-modal">
       <div class="modal__overlay"></div>
       <div class="modal__dialog">

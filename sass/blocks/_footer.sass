@@ -1,0 +1,76 @@
+.footer
+  &-menu
+    display: flex
+    flex-wrap: wrap
+    @include line-grey
+    &__block
+      padding-top: 30px
+      padding-right: 20px
+      padding-bottom: 64px
+      width: 195px
+      &--red
+        border-top: 5px solid #ff4f52
+      &--fiolet
+        border-top: 5px solid #ac8ee3
+      &--blue
+        border-top: 5px solid #4592ff
+      &--orange
+        border-top: 5px solid #ffa34d
+      &--green
+        border-top: 5px solid #3dc47e
+      &--grey
+        width: 165px
+        border-top: 5px solid #6e99ae
+    &__title
+      margin-bottom: 25px
+      @include font-param(14px, 900, 20px)
+      color: $main-dark
+    &__item
+      &:not(&:last-child)
+        margin-bottom: 15px
+      &-link
+        @include font-param(14px, 400, 20px)
+        color: $txt-base-dark
+  &-logo
+    width: 50px
+    height: 50px
+    margin-right: 31px
+    border-radius: 50%
+    background-color: $bg-btn
+    display: flex
+    align-items: center
+    justify-content: center
+  &-contacts
+    padding: 30px 0 29px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    @include line-grey
+    &__inner
+      display: flex
+      align-items: center
+    &__list
+      display: flex
+      justify-content: space-between
+      width: 485px
+    &__item
+      @include font-param(14px, 900, 20px)
+      color: $main-dark
+      letter-spacing: 0.5px
+      text-transform: uppercase
+  &-social
+    width: 18%
+  &-copyright
+    padding: 40px 0 55px
+    display: flex
+    justify-content: space-between
+    align-items: start
+    &__text
+      flex-basis: 65.8%
+      color: #939699
+      @include font-param(14px, 400, 20px)
+    &__info
+      text-align: right
+      color: #939699
+      @include font-param(14px, 400, 20px)

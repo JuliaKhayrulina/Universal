@@ -60,5 +60,25 @@ $(document).ready(function () {
       bulletClass: 'career-sliders__bullet',
       bulletActiveClass: 'career-sliders__bullet--active',
     },
+    on: {
+      init() {
+        this.el.addEventListener('mouseenter', () => {
+          this.autoplay.stop();
+        });
+
+        this.el.addEventListener('mouseleave', () => {
+          this.autoplay.start();
+        });
+      },
+    },
+  });
+  //==========плавный скролл===========//
+  $(document).ready(function () {
+    $('a.scrollto').click(function () {
+      var elementClick = $(this).attr('href');
+      var destination = $(elementClick).offset().top;
+      jQuery('html:not(:animated),body:not(:animated)').animate({ scrollTop: destination }, 800);
+      return false;
+    });
   });
 });

@@ -21,6 +21,12 @@ ul
 input
   border: none
   outline: none
+.no-scroll
+  width: 100%
+  height: 100%
+  overflow: hidden 
+  padding: 0
+  margin: 0
 .container
   max-width: 1140px
   margin: auto
@@ -96,13 +102,18 @@ input
       background-color: #1DA1F2  
     &--youtube
       background-color: #FF0000
+    &--instagram
+      background-color: #262626
+    &--sm
+      width: 40px
+      height: 40px
 .btn
   display: flex
   align-items: center
   justify-content: center
   width: 154px
   height: 40px
-  @include font-param(1rem, 900, 20px)
+  @include font-param(1rem, 700, 20px)
   border-radius: 20px
   background-color: $bg-btn
   &-icon
