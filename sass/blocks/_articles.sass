@@ -67,13 +67,16 @@
     &__link
       &-title
         max-width: 237px
-        height: 90px
         display: block
         margin-bottom: 25px
         font-family: RobotoSlab
         @include font-param(1.53rem, 700, 30px)
         color: $main-dark
         overflow: hidden
+    &__title
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
     &__text
       @include font-param(14px, 400, 20px)
       color: #4B5157
@@ -106,6 +109,7 @@
       background-color: #3DC47E
       border-radius: 3px
     &__theme
+      display: inline-block
       margin-bottom: 21px
       margin-top: 20px
       @include font-param(12px, 400, 15px)

@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/fonts.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Universal</title>
@@ -361,9 +362,9 @@
           </div>
         </div>
         <div class="recommend-block">
-          <div class="recommend-block__links">
-            <a href="#" class="recommend-block__text">25 способов настроить слайдер</a>
-            <a href="#" class="recommend-block__inner">
+          <a class="recommend-block__links">
+            <span class="recommend-block__text">25 способов настроить слайдер</span>
+            <span class="recommend-block__inner">
               <picture>
                 <source
                   class="recommend-block__img"
@@ -377,8 +378,8 @@
                   loading="lazy"
                 />
               </picture>
-            </a>
-          </div>
+            </span>
+          </a>
           <div class="recommend-block__links">
             <a href="#" class="recommend-block__text">Главные фишки фрилансера</a>
             <a href="#" class="recommend-block__inner">
@@ -440,7 +441,7 @@
       <div class="container articles-grid">
         <div class="articles-grid__item about about-work">
           <div class="about-work__descr">
-            <span class="about-work__theme">Статьи</span>
+            <a href="#" class="about-work__theme">Статьи</a>
             <a href="#" class="about-work__link-title">
               <h3 class="about-work__title">Вам предложили работу мечты, но вы не можете...</h3>
             </a>
@@ -477,9 +478,9 @@
           </a>
         </div>
         <div class="articles-grid__item about about-portfolio">
-          <span class="about-portfolio__label">Популярное</span>
+          <span class="label about-portfolio__label">Популярное</span>
           <div class="about-portfolio__descr">
-            <div class="span about-portfolio__theme">Web design</div>
+            <a href="#" class="span about-portfolio__theme">Web design</a>
             <a href="#" class="about-portfolio__link-title">
               <h3 class="about-portfolio__title">Где взять реальные проекты для портфолио</h3>
             </a>
@@ -1017,148 +1018,391 @@
         <div class="news-side">
           <span class="news-side__subtitle">Недавно опубликовано</span>
           <div class="news-side__posts">
-            <a href="#" class="news-side__post news-side__post--active">
-              <picture>
-                <source
-                  class="news-side__img"
-                  type="image/webp"
-                  srcset="./img/news/news-side-one.webp"
-                />
-                <img
-                  loading="lazy"
-                  src="./img/news/news-side-one.jpg"
-                  alt="news-side one"
-                  class="news-side__img"
-                />
-              </picture>
+            <div class="news-side__wrapper">
+              <a href="#" class="news-side__post">
+                <picture class="picture">
+                  <source
+                    class="news-side__img"
+                    type="image/webp"
+                    srcset="./img/news/news-side-one.webp"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./img/news/news-side-one.jpg"
+                    alt="news-side one"
+                    class="news-side__img"
+                  />
+                </picture>
 
-              <div class="news-side__info">
-                <span class="news-side__title">Работа на удаленке, как это теперь</span>
-                <span class="date"><time datetime="2021-12-31">15 минут назад</time></span>
-              </div>
-            </a>
-            <a href="#" class="news-side__post">
-              <picture>
-                <source
-                  class="news-side__img"
-                  type="image/webp"
-                  srcset="./img/news/news-side-two.webp"
-                />
-                <img
-                  loading="lazy"
-                  src="./img/news/news-side-two.jpg"
-                  alt="news-side two"
-                  class="news-side__img"
-                />
-              </picture>
-              <div class="news-side__info">
-                <span class="news-side__title">Для чего нужен Node.js и с чем...</span>
-                <span class="date"><time datetime="2021-12-31">32 минуты назад</time></span>
-              </div>
-            </a>
-            <a href="#" class="news-side__post">
-              <picture>
-                <source
-                  class="news-side__img"
-                  type="image/webp"
-                  srcset="./img/news/news-side-three.webp"
-                />
-                <img
-                  loading="lazy"
-                  src="./img/news/news-side-three.jpg"
-                  alt="news-side three"
-                  class="news-side__img"
-                />
-              </picture>
-              <div class="news-side__info">
-                <span class="news-side__title">Работа в Google: собеседования и...</span>
-                <span class="date"><time datetime="2021-12-31">38 минут назад</time></span>
-              </div>
-            </a>
-            <a href="#" class="news-side__post">
-              <picture>
-                <source
-                  class="news-side__img"
-                  type="image/webp"
-                  srcset="./img/news/news-side-four.webp"
-                />
-                <img
-                  loading="lazy"
-                  src="./img/news/news-side-four.jpg"
-                  alt="news-side four"
-                  class="news-side__img"
-                />
-              </picture>
-              <div class="news-side__info">
-                <span class="news-side__title">Переезд в Нью Йорк для работы по...</span>
-                <span class="date"><time datetime="2021-12-31">53 минуты назад</time></span>
-              </div>
-            </a>
-            <a href="#" class="news-side__post">
-              <picture>
-                <source
-                  class="news-side__img"
-                  type="image/webp"
-                  srcset="./img/news/news-side-five.webp"
-                />
-                <img
-                  loading="lazy"
-                  src="./img/news/news-side-five.jpg"
-                  alt="news-side five"
-                  class="news-side__img"
-                />
-              </picture>
-              <div class="news-side__info">
-                <span class="news-side__title">Почему родители против того, чтобы...</span>
-                <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
-              </div>
-            </a>
-            <a href="#" class="news-side__post">
-              <picture>
-                <source
-                  class="news-side__img"
-                  type="image/webp"
-                  srcset="./img/news/news-side-six.webp"
-                />
-                <img
-                  loading="lazy"
-                  src="./img/news/news-side-six.jpg"
-                  alt="news-side six"
-                  class="news-side__img"
-                />
-              </picture>
-              <div class="news-side__info">
-                <span class="news-side__title">Прокрастинация: побороть отклады...</span>
-                <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
-              </div>
-            </a>
-            <a href="#" class="news-side__post">
-              <picture>
-                <source
-                  class="news-side__img"
-                  type="image/webp"
-                  srcset="./img/news/news-side-seven.webp"
-                />
-                <img
-                  loading="lazy"
-                  src="./img/news/news-side-seven.jpg"
-                  alt="news-side seven"
-                  class="news-side__img"
-                />
-              </picture>
-              <div class="news-side__info">
-                <span class="news-side__title">Правки от заказчика могут быть...</span>
-                <span class="date"><time datetime="2021-12-31">2 часа назад</time></span>
-              </div>
-            </a>
+                <div class="news-side__info">
+                  <span class="news-side__title">Работа на удаленке, как это теперь</span>
+                  <span class="date"><time datetime="2021-12-31">15 минут назад</time></span>
+                </div>
+              </a>
+              <a href="#" class="news-side__post">
+                <picture class="picture">
+                  <source
+                    class="news-side__img"
+                    type="image/webp"
+                    srcset="./img/news/news-side-two.webp"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./img/news/news-side-two.jpg"
+                    alt="news-side two"
+                    class="news-side__img"
+                  />
+                </picture>
+                <div class="news-side__info">
+                  <span class="news-side__title">Для чего нужен Node.js и с чем...</span>
+                  <span class="date"><time datetime="2021-12-31">32 минуты назад</time></span>
+                </div>
+              </a>
+              <a href="#" class="news-side__post">
+                <picture class="picture">
+                  <source
+                    class="news-side__img"
+                    type="image/webp"
+                    srcset="./img/news/news-side-three.webp"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./img/news/news-side-three.jpg"
+                    alt="news-side three"
+                    class="news-side__img"
+                  />
+                </picture>
+                <div class="news-side__info">
+                  <span class="news-side__title">Работа в Google: собеседования и...</span>
+                  <span class="date"><time datetime="2021-12-31">38 минут назад</time></span>
+                </div>
+              </a>
+              <a href="#" class="news-side__post">
+                <picture class="picture">
+                  <source
+                    class="news-side__img"
+                    type="image/webp"
+                    srcset="./img/news/news-side-four.webp"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./img/news/news-side-four.jpg"
+                    alt="news-side four"
+                    class="news-side__img"
+                  />
+                </picture>
+                <div class="news-side__info">
+                  <span class="news-side__title">Переезд в Нью Йорк для работы по...</span>
+                  <span class="date"><time datetime="2021-12-31">53 минуты назад</time></span>
+                </div>
+              </a>
+              <a href="#" class="news-side__post">
+                <picture class="picture">
+                  <source
+                    class="news-side__img"
+                    type="image/webp"
+                    srcset="./img/news/news-side-five.webp"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./img/news/news-side-five.jpg"
+                    alt="news-side five"
+                    class="news-side__img"
+                  />
+                </picture>
+                <div class="news-side__info">
+                  <span class="news-side__title">Почему родители против того, чтобы...</span>
+                  <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
+                </div>
+              </a>
+              <a href="#" class="news-side__post">
+                <picture class="picture">
+                  <source
+                    class="news-side__img"
+                    type="image/webp"
+                    srcset="./img/news/news-side-six.webp"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./img/news/news-side-six.jpg"
+                    alt="news-side six"
+                    class="news-side__img"
+                  />
+                </picture>
+                <div class="news-side__info">
+                  <span class="news-side__title">Прокрастинация: побороть отклады...</span>
+                  <span class="date"><time datetime="2021-12-31">1 час назад</time></span>
+                </div>
+              </a>
+              <a href="#" class="news-side__post">
+                <picture class="picture">
+                  <source
+                    class="news-side__img"
+                    type="image/webp"
+                    srcset="./img/news/news-side-seven.webp"
+                  />
+                  <img
+                    loading="lazy"
+                    src="./img/news/news-side-seven.jpg"
+                    alt="news-side seven"
+                    class="news-side__img"
+                  />
+                </picture>
+                <div class="news-side__info">
+                  <span class="news-side__title">Правки от заказчика могут быть...</span>
+                  <span class="date"><time datetime="2021-12-31">2 часа назад</time></span>
+                </div>
+              </a>
+            </div>
           </div>
-
-          <div class="news-side__slider">
-            <img src="./img/svg/next.svg" alt="prev" class="prev" width="25" height="25" />
-            <a href="#" class="news-side__more">Read more</a>
-            <img src="./img/svg/next.svg" alt="next" class="next" width="25" height="25" />
+          <a href="#" class="news-side__more">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="career">
+      <div class="container career-grid">
+        <div class="career-grid__item career-sliders">
+          <!-- Slider main container -->
+          <div class="career-sliders__container swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="career-sliders__wrapper swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="career-sliders__slide swiper-slide">
+                <span class="label career-sliders__label">Горячее</span>
+                <picture>
+                  <source
+                    srcset="./img/career/slide-one.webp"
+                    type="image/webp"
+                    class="career__swiper-img"
+                  />
+                  <img
+                    src="./img/career/slide-one.jpg"
+                    alt="Readers choice"
+                    class="career-sliders__slide-img"
+                  />
+                </picture>
+                <div class="career-sliders__gradient"></div>
+                <div class="career-sliders__descr">
+                  <a href="#" class="career-sliders__user">
+                    <img
+                      src="./img/career/Oksana-Pushkina.jpg"
+                      alt="Фотограф: Оксана Пушкина"
+                      class="avatar career-sliders__user-avatar"
+                    />
+                  </a>
+                  <a href="#" class="career-sliders__user-info">
+                    <span class="career-sliders__user-name">Оксана Пушкина</span>
+                    <span class="career-sliders__user-prof">Фотограф</span>
+                  </a>
+                  <a href="#" class="career-sliders__link-title">
+                    <h3 class="career-sliders__title">
+                      Выбор читателей: где удобнее работать фрилансеру
+                    </h3>
+                  </a>
+                  <a href="#" class="btn btn-hover career-sliders__photos">
+                    <span class="btn-icon career-sliders__icon"></span>
+                    Смотреть фото
+                    <span class="career-sliders__numb">26</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="career-sliders__slide swiper-slide">
+                <span class="label career-sliders__label">Горячее</span>
+                <picture>
+                  <source
+                    srcset="./img/career/slide-two.webp"
+                    type="image/webp"
+                    class="career__swiper-img"
+                  />
+                  <img
+                    src="./img/career/slide-two.jpg"
+                    alt="Readers choice"
+                    class="career-sliders__slide-img"
+                  />
+                </picture>
+                <div class="career-sliders__gradient"></div>
+                <div class="career-sliders__descr">
+                  <a href="#" class="career-sliders__user">
+                    <img
+                      src="./img/recommend/David-Gurov.png"
+                      alt="Фотограф: Оксана Пушкина"
+                      class="avatar career-sliders__user-avatar"
+                    />
+                  </a>
+                  <a href="#" class="career-sliders__user-info">
+                    <span class="career-sliders__user-name">Давид Гуров</span>
+                    <span class="career-sliders__user-prof">Разработчик</span>
+                  </a>
+                  <a href="#" class="career-sliders__link-title">
+                    <h3 class="career-sliders__title">
+                      Выбор читателей: где удобнее работать фрилансеру
+                    </h3>
+                  </a>
+                  <a href="#" class="btn btn-hover career-sliders__photos">
+                    <span class="btn-icon career-sliders__icon"></span>
+                    Смотреть фото
+                    <span class="career-sliders__numb">26</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="career-sliders__slide swiper-slide">
+                <span class="label career-sliders__label">Горячее</span>
+                <picture>
+                  <source
+                    srcset="./img/career/slide-three.webp"
+                    type="image/webp"
+                    class="career__swiper-img"
+                  />
+                  <img
+                    src="./img/career/slide-three.jpg"
+                    alt="Readers choice"
+                    class="career-sliders__slide-img"
+                  />
+                </picture>
+                <div class="career-sliders__gradient"></div>
+                <div class="career-sliders__descr">
+                  <a href="#" class="career-sliders__user">
+                    <img
+                      src="./img/recommend/Alexey-Kravcov.jpg"
+                      alt="Разработчик: Алексей Кравцов"
+                      class="avatar career-sliders__user-avatar"
+                    />
+                  </a>
+                  <a href="#" class="career-sliders__user-info">
+                    <span class="career-sliders__user-name">Алексей Кравцов</span>
+                    <span class="career-sliders__user-prof">Разработчик</span>
+                  </a>
+                  <a href="#" class="career-sliders__link-title">
+                    <h2 class="career-sliders__title">
+                      Выбор читателей: где удобнее работать фрилансеру
+                    </h2>
+                  </a>
+                  <a href="#" class="btn btn-hover career-sliders__photos">
+                    <span class="btn-icon career-sliders__icon"></span>
+                    Смотреть фото
+                    <span class="career-sliders__numb">26</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="career-sliders__slide swiper-slide">
+                <span class="label career-sliders__label">Горячее</span>
+                <picture>
+                  <source
+                    srcset="./img/career/slide-four.webp"
+                    type="image/webp"
+                    class="career__swiper-img"
+                  />
+                  <img
+                    src="./img/career/slide-four.jpg"
+                    alt="Readers choice"
+                    class="career-sliders__slide-img"
+                  />
+                </picture>
+                <div class="career-sliders__gradient"></div>
+                <div class="career-sliders__descr">
+                  <a href="#" class="career-sliders__user">
+                    <img
+                      src="./img/recommend/Ekaterina-Krasavceva.jpg"
+                      alt="Дизайнер: Екатерина Кравцова"
+                      class="avatar career-sliders__user-avatar"
+                    />
+                  </a>
+                  <a href="#" class="career-sliders__user-info">
+                    <span class="career-sliders__user-name">Екатерина Кравцова</span>
+                    <span class="career-sliders__user-prof">Дизайнер</span>
+                  </a>
+                  <a href="#" class="career-sliders__link-title">
+                    <h3 class="career-sliders__title">
+                      Выбор читателей: где удобнее работать фрилансеру
+                    </h3>
+                  </a>
+                  <a href="#" class="btn btn-hover career-sliders__photos">
+                    <span class="btn-icon career-sliders__icon"></span>
+                    Смотреть фото
+                    <span class="career-sliders__numb">26</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="career-sliders__slide swiper-slide">
+                <span class="label career-sliders__label">Горячее</span>
+                <picture>
+                  <source
+                    srcset="./img/career/slide-five.webp"
+                    type="image/webp"
+                    class="career__swiper-img"
+                  />
+                  <img
+                    src="./img/career/slide-five.jpg"
+                    alt="Readers choice"
+                    class="career-sliders__slide-img"
+                  />
+                </picture>
+                <div class="career-sliders__gradient"></div>
+                <div class="career-sliders__descr">
+                  <a href="#" class="career-sliders__user">
+                    <img
+                      src="./img/recommend/Mihail-Rudenya.jpg"
+                      alt="Разработчик: Михаил Руденя"
+                      class="avatar career-sliders__user-avatar"
+                    />
+                  </a>
+                  <a href="#" class="career-sliders__user-info">
+                    <span class="career-sliders__user-name">Михаил Руденя</span>
+                    <span class="career-sliders__user-prof">Разработчик</span>
+                  </a>
+                  <a href="#" class="career-sliders__link-title">
+                    <h3 class="career-sliders__title">
+                      Выбор читателей: где удобнее работать фрилансеру
+                    </h3>
+                  </a>
+                  <a href="#" class="btn btn-hover career-sliders__photos">
+                    <span class="btn-icon career-sliders__icon"></span>
+                    Смотреть фото
+                    <span class="career-sliders__numb">26</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="career-sliders__pagination swiper-pagination"></div>
           </div>
         </div>
+        <div class="career-grid__item career-item career-item--two">
+          <div class="career-item__descr">
+            <span class="career-item__theme">Карьера</span>
+            <a href="#" class="career-item__inner-title career-item__inner-title--two">
+              <h3 class="career-item__title career-item__title--two">
+                Вопросы на собеседовании для джуна
+              </h3>
+            </a>
+            <p class="career-item__text career-item__text--two">
+              Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование
+            </p>
+            <a href="#" class="btn btn-hover career-item__read">
+              Читать далее
+              <span class="btn-icon"></span>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="career-grid__item career-item career-item--three">
+          <h4 class="career-item__title">Зарядка для глаз</h4>
+
+          <p class="career-item__text career-item__text--three">
+            Эти несколько упражнений помогут сохранить зрение. Можно делать их даже если...
+          </p>
+          <span class="date"><time datetime="2021-10-15">15 октября</time></span>
+        </a>
+        <a href="#" class="career-grid__item career-item career-item--four">
+          <h4 class="career-item__title">Топ плагинов jQuery</h4>
+
+          <p class="career-item__text career-item__text--four">
+            Какие плагины помогут быстро создать галерею, выпадающие списки или окна
+          </p>
+          <span class="date"><time datetime="2021-10-14">14 октября</time></span>
+        </a>
       </div>
     </section>
     <div class="modal" id="header-modal">
@@ -1222,6 +1466,7 @@
       </div>
     </div>
     <script defer src="./js/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/swiper-bundle.min.js"></script>
     <script defer src="./js/jquery.validate.min.js"></script>
     <script defer src="./js/jquery.mask.min.js"></script>
     <script defer src="./js/validate.js"></script>

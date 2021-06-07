@@ -86,50 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('no-scroll');
   }
 
-  //=================News-slider=============================//
-
-  const images = document.querySelectorAll('.news-side__post');
-  let count = 0;
-  const next = document.querySelector('.next');
-  const prev = document.querySelector('.prev');
-
-  function nextFunction(event) {
-    if (window.screen.width < 992) {
-      if (count == images.length - 1) {
-        count = -1;
-      }
-      count++;
-      for (let image of images) {
-        image.classList.remove('news-side__post--active');
-      }
-      images[count].classList.add('news-side__post--active');
-      document.querySelector('.news-side').src = images[count].src;
-    }
-  }
-
-  function prevFunction(event) {
-    if (window.screen.width < 992) {
-      if (count == 0) {
-        count = images.length;
-      }
-      count--;
-      for (let image of images) {
-        image.classList.remove('news-side__post--active');
-      }
-      images[count].classList.add('news-side__post--active');
-      document.querySelector('.news-side').src = images[count].src;
-
-      event.preventDefault();
-      return false;
-    }
-  }
-  setInterval(() => nextFunction(), 3500);
-  next.addEventListener('click', nextFunction);
-  next.addEventListener('touchmove', nextFunction);
-
-  prev.addEventListener('click', prevFunction);
-  prev.addEventListener('touchmove', prevFunction);
-
   //==========News-bookmark======================//
   const bookmarks = document.querySelectorAll('.news-card__bookmark');
 

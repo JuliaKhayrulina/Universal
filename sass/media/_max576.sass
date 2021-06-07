@@ -90,13 +90,14 @@
   .social
     width: 55%
   .salary
-    padding: 20px 0 20px
     &__title
       font-size: 20px
+      line-height: 30px
   .news
     &-card
       flex-direction: column
       &__content
+        max-width: 100%
         padding: 0
         margin-top: 20px
         min-height: 200px
@@ -107,6 +108,17 @@
     &-cards
       padding-left: 45px
       padding-right: 45px
+    &-side
+      &__wrapper
+        flex-direction: column
+      &__post
+        width: 100%
+        &:nth-child(5)
+          @include line-grey
+      &__info
+        flex-basis: 100%
+      &__title
+        width: 100%
  
   
 

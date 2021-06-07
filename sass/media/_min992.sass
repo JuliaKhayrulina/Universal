@@ -38,25 +38,17 @@
         &:hover
           background-color: #F5F5F5
     &-block
-      &__text
+      &__links
         transition: .2s
         &:hover
-          color: #6E99AE
-  .news
-    &-card
-      &__link
-        transition: .1s
-        &:hover
-          letter-spacing: 0.3px
-    &-side
-      &__info
-        transition: .1s
-        &:hover
-          letter-spacing: 0.3px
+          .recommend-block__text
+            color: #FFA34D
+ 
   .about
-    transition: .2s
-    &:hover
-      box-shadow: 14px 20px 12px -5px rgba(62, 105, 144, 0.56)
+    &-tools, &-reference, &-customers, &-stress, &-methods
+      transition: .2s
+      &:hover
+        box-shadow: 14px 20px 12px -5px rgba(62, 105, 144, 0.56)
     &-tags
       &__links
         &-tag
@@ -72,4 +64,24 @@
       &__title
         transition: .2s
         &:hover
-          color: $bg-btn
+          color: #3bbdc4
+
+  .news
+    &-card
+      &__link
+        transition: .2s
+        &:hover
+          color: #3bbdc4
+    &-side
+      &__more
+        border-bottom-left-radius: 8px
+        border-bottom-right-radius: 8px
+        transition: .3s
+        &:hover
+          background-color: #2e9096
+      &__post
+        &:hover
+          .news-side__title
+            color: #FFA34D
+
+
