@@ -732,7 +732,7 @@ input {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  height: 3.5em;
+  height: 3.7em;
 }
 
 .about-work__text {
@@ -1649,7 +1649,7 @@ input {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  height: 3.5em;
+  height: 4em;
 }
 
 .career-item__text--two, .career-item__text--three, .career-item__text--four {
@@ -1669,7 +1669,7 @@ input {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  height: 3.9em;
+  height: 4.4em;
 }
 
 .modal__overlay {
@@ -2287,6 +2287,9 @@ input {
   }
   .about-work__descr {
     padding-top: 72px;
+  }
+  .about-work__title {
+    height: 4em;
   }
   .about-tags__links {
     padding: 18px 8px 18px 23px;
