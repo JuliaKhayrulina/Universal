@@ -78,8 +78,12 @@
       display: flex
       flex-direction: column
       align-items: center
-    &__user
-      margin-bottom: 5px
+    &__author
+      display: flex
+      flex-direction: column
+      align-items: center
+      &-link
+        margin-bottom: 5px
       &-avatar
         width: 46px
         height: 45px
@@ -110,7 +114,6 @@
       min-width: 195px
       min-height: 40px
       background-color: #4592ff
-      
     &__icon
       margin: 0 8px 0 0
       width: 19px
@@ -126,7 +129,6 @@
     overflow: hidden
     &--two
       position: relative
-      padding: 35px 35px 50px
       background-color: #B4D1E0
       z-index: 0
       &::before
@@ -140,24 +142,24 @@
         height: 260px
         border-radius: 50%
         background-color: #D1E2EB
-        z-index: 2
+        z-index: 1
       &::after
-        content: ''
+        content: ""
         position: absolute
         top: 0
-        right: 1px
-        left: 0
+        right: 0
         bottom: 0
-        z-index: 3
+        left: 0
         background: url(../img/career/junior.png) center center/ cover no-repeat
+        z-index: 2
     &__descr
+      width: 48.4%
       position: absolute
-      padding: 35px 307px 50px 37px
       top: 0
       left: 0
-      right: 0
       bottom: 0
-      z-index: 4
+      padding: 35px 0 50px 35px
+      z-index: 3
     &--three, &--four
       padding: 25px 25px 30px
       background-color: $txt-base-light
@@ -168,30 +170,32 @@
       letter-spacing: 0.5px
       color: #6E99AE
       text-transform: uppercase
-    &__inner-title
-      display: block
-      margin-bottom: 15px
-      font-family: RobotoSlab
-      @include font-param(1.53rem, 900, 30px)
-      color: $main-dark
-      height: 91px
-      overflow: hidden
     &__title
-      &--four, &--three
-        margin-bottom: 5px
+      margin-bottom: 5px
+      font-family: RobotoSlab
+      @include font-param(16px, 900, 25px)
+      color: $main-dark
+      &--two
+        display: block
+        margin-bottom: 15px
         font-family: RobotoSlab
-        @include font-param(16px, 900, 25px)
+        @include font-param(1.79rem, 900, 30px)
         color: $main-dark
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        height: 3.5em
     &__text
       &--two, &--three, &--four
         margin-bottom: 45px
         @include font-param(14px, 400, 20px)
         color: $txt-base-dark
-        height: 60px
-        overflow: hidden
       &--three, &--four
         margin-bottom: 10px
-      
-    
-
-     
+      &--two
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        height: 3.9em
