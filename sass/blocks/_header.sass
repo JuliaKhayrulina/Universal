@@ -1,8 +1,13 @@
 
 .header
-  height: 547px
   padding-top: 15px
   background-color: $main-dark
+  &--light
+    background-color: $txt-base-light
+    padding-bottom: 15px
+  &-bg
+    height: 547px
+    background-color: $main-dark
   &-wrapper
     display: flex
     justify-content: space-between
@@ -11,7 +16,7 @@
   &-logo
     width: 163px
     height: 40px
-    &__link
+    &__link, &__inner
       width: 40px
       height: 40px
       display: flex
@@ -19,7 +24,12 @@
       align-items: center
       background-color: $txt-base-light
       border-radius: 50%
+      &--blue
+        background-color: $bg-btn
     &__icon
+      margin-right: 10px
+    &__inner
+      background-color: $bg-btn
       margin-right: 10px
   &-btn
     width: 261px
@@ -40,10 +50,15 @@
     &__item
       &:not(&:last-child)
         margin-right: 30px
+      &--mr
+        &:not(&:last-child)
+          margin-right: 28px
       &--hidden
         display: none
       &-link
         @include font-param(1rem, 900, 20px)
+        &--light
+          color: #939699
   &-button
     display: none
     

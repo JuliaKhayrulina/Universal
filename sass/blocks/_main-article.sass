@@ -1,0 +1,88 @@
+.article
+  max-width: 1920px
+  &-news
+    padding-top: 61px
+    padding-bottom: 72px
+    min-height: 590px
+    &--freelance
+      background:  linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url('../img/main_article/bg-freelance.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center 
+    &--telegram
+      background:  linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url('../img/main_article/bg-telegram.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center 
+    &--jorney
+      background:  linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url('../img/main_article/bg-jorney.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center 
+    &__container
+      position: relative
+    &__wrapper
+      max-width: 944px
+      margin: auto
+    &__navigation
+      margin-bottom: 48px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+    &__theme
+      @include font-param(12px, 900, 15px)
+      text-transform: uppercase
+      color: #4592FF
+      &--red
+        color: #ff4f52
+    &__title
+      max-width: 85%
+      margin-bottom: 32px
+      font-family: RobotoSlab
+      @include font-param(3.93rem, 700, 70px)
+      text-align: left
+    &__text
+      max-width: 68%
+      margin-bottom: 43px
+      @include font-param(1.28rem, 400, 30px)
+      opacity: 0.85
+      text-align: left
+    &__public
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 223px
+      cursor: pointer
+
+.navigation
+  display: flex
+  align-items: center
+  &__main
+    margin-right: 32px
+    display: inline-flex
+    flex-direction: row
+    align-items: center
+    @include font-param(14px, 900, 20px)
+    color: $txt-base-light
+    &-icon
+      margin-right: 5px
+      fill: white
+  &__prev
+    margin-right: 16px
+    @include font-param(14px, 900, 20px)
+    color: $txt-base-light
+    &-icon
+      margin-right: 5px
+      display: inline-block
+      transform: rotate(180deg)
+      fill: white
+  &__next
+    @include font-param(14px, 900, 20px)
+    color: $txt-base-light
+    &-icon
+      margin-left: 5px
+      fill: white
+  
+
+

@@ -28,9 +28,18 @@
       &--two
         &::after, &::before
           display: none
-          
       &__descr
         width: 100%
         padding-right: 35px
-
+  .subscription
+    &-form
+      &__input
+        width: 100%
+        margin-right: 0
+    &__inner
+      width: 100%
+  .article
+    &-news
+      &__title
+        @include font-param(2rem, 700, 30px)
 

@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', openModal);
   }
 
-  function openModal() {
+  function openModal(event) {
+    event.preventDefault();
     const btn = this;
     const targetModal = btn.getAttribute('data-href');
     const childs = document.querySelector(`${targetModal}`).children;
@@ -87,11 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   //==========News-bookmark======================//
-  const bookmarks = document.querySelectorAll('.news-card__bookmark');
+  const bookmarks = document.querySelectorAll('.bookmark');
 
   bookmarks.forEach((item) => {
     item.addEventListener('click', function () {
-      this.classList.toggle('news-card__bookmark--active');
+      this.classList.toggle('bookmark--active');
     });
   });
 });

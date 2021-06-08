@@ -81,4 +81,6 @@ $(document).ready(function () {
       return false;
     });
   });
+  //====плавный переход на страницы=========//
+  $('body').css('opacity', '1');
 });

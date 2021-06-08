@@ -111,7 +111,7 @@
     &-card
       &__content
         max-width: 70.95%
-    &__link
+        &__link
       width: auto
     &-side
       width: 100%
@@ -134,6 +134,14 @@
           border-bottom: none
       &__info
         flex-basis: 70%
+
+
+  .bookmark
+    &--article
+      width: 20px
+      height: 20px
+      top: 76px
+
   .career
     &-grid
       grid-template-columns: 1fr 1fr
@@ -169,4 +177,17 @@
   .footer
     &-contacts
       flex-direction: column
-      
+
+  .article
+    &-news
+      min-height: 459px
+      padding-top: 40px
+      padding-bottom: 40px
+      &__wrapper
+        max-width: 600px
+      &__title
+        @include font-param(3rem, 700, 51px)
+      &__text
+        @include font-param(1.2rem, 700, 22px)
+     
+    
