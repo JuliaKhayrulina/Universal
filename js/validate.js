@@ -72,6 +72,21 @@ $(document).ready(function () {
       },
     },
   });
+
+  //===========article-swiper====================//
+  const articleSwiper = new Swiper('.article-sliders__container', {
+    loop: true,
+    navigation: {
+      nextEl: '.article-sliders__button--next',
+      prevEl: '.article-sliders__button--prev',
+      hideOnClick: true,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  });
+
   //==========плавный скролл===========//
   $(document).ready(function () {
     $('a.scrollto').click(function () {
@@ -81,6 +96,7 @@ $(document).ready(function () {
       return false;
     });
   });
+
   //====плавный переход на страницы=========//
   $('body').css('opacity', '1');
 });
