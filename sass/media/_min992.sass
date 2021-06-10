@@ -145,12 +145,7 @@
         transition: .2s
         &:hover
           color: #ffa34d
-  .article
-    &-news
-      &__title
-        transition: .2s
-        &:hover
-          color: #ffa34d
+
   .navigation
     &__prev, &__next, &__main
       transition: .2s
@@ -185,6 +180,20 @@
         transition: .3s
         &:hover
           background-color: #ecf3f5
+    &-comments
+      &__add
+        transition: .3s all
+        &:hover
+          background-color: $bg-btn
+          box-shadow: inset 0 0 30px #BFE2FF
+          outline-color: rgba(255, 255, 255, 0)
+          outline-offset: 15px
+      &__more
+          transition: .3s all
+          &:hover
+            background-color: $bg-light
+
+
 
     &-sliders
       &__author
@@ -205,5 +214,11 @@
         outline-color: rgba(255, 255, 255, 0)
         outline-offset: 15px
 
-
+  .extra
+    &-post
+      &__card
+        &:hover
+          .extra-post__title
+            color: #3bbdc4
+         
 

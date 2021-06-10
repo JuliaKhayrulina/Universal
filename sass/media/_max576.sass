@@ -220,6 +220,19 @@
           left: 3px
         &--next
           right: 3px
+    &-comments
+      padding-top: 60px
+      &__title
+        @include font-param(2.5rem, 700, 40px)
+        margin-bottom: 40px
+      &__numb
+        @include font-param(2.5rem, 400, 40px)
+      &__comment
+        max-width: 100%
+      &__block
+        &:nth-child(2)
+          padding-left: 50px
+    
    
   .navigation
     flex-direction: column
@@ -228,8 +241,16 @@
       margin-top: 10px
   .repost
     &-inner
-      flex-direction: column
       align-items: start
-      height: 140px
+      justify-content: start
+      flex-wrap: wrap
+      height: 125px
       width: 100% 
+  .extra
+    &-post
+      &__card
+        width: 100%
+      &__img
+        height: 200px
+
 

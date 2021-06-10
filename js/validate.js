@@ -17,6 +17,10 @@ $(document).ready(function () {
           required: true,
           minlength: 18,
         },
+        comment: {
+          required: true,
+          minlength: 100,
+        },
       },
       messages: {
         name: {
@@ -33,6 +37,10 @@ $(document).ready(function () {
         },
         message: {
           required: 'Пожалуйста, не отправляйте пустое сообщение',
+        },
+        comment: {
+          required: 'Напишите Ваш комментарий',
+          minlength: 'Количество символов не менее 100',
         },
       },
     });
