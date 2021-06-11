@@ -5,38 +5,29 @@ $(document).ready(function () {
     $(this).validate({
       errorClass: 'invalid',
       rules: {
-        name: {
+        select: {
           required: true,
-          minlength: 2,
         },
         email: {
           required: true,
           email: true,
         },
-        phone: {
-          required: true,
-          minlength: 18,
-        },
+
         comment: {
           required: true,
           minlength: 100,
         },
       },
       messages: {
-        name: {
-          required: 'Пожалуйста, укажите свое имя',
-          minlength: 'Имя должно быть не менее 2 символов',
+        select: {
+          required: 'Выберите тему письма',
         },
         email: {
-          required: 'Нам нужен ваш адрес электронной почты, чтобы связаться с вами',
-          email: 'Ваш адрес электронной почты должен быть в формате name@domain.com',
-        },
-        phone: {
-          required: 'Пожалуйста, укажите свой номер телефона',
-          minlength: 'Номер телефона должен быть 11 цифр',
+          required: 'Пожалуйста, оставьте Ваш Email для связи',
+          email: 'Формат почты должен быть name@domain.com',
         },
         message: {
-          required: 'Пожалуйста, не отправляйте пустое сообщение',
+          required: 'Пожалуйста, напишите сообщение',
         },
         comment: {
           required: 'Напишите Ваш комментарий',
@@ -107,4 +98,17 @@ $(document).ready(function () {
 
   //====плавный переход на страницы=========//
   $('body').css('opacity', '1');
+
+  //=======кнопка наверх=================//
+  $(window).scroll(function () {
+    if ($(this).scrollTop() != 0) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+
+  $('#back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 800);
+  });
 });

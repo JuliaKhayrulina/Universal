@@ -188,12 +188,25 @@
           box-shadow: inset 0 0 30px #BFE2FF
           outline-color: rgba(255, 255, 255, 0)
           outline-offset: 15px
+          .article-comments__add-icon
+            fill: #ffa34d
       &__more
           transition: .3s all
           &:hover
             background-color: $bg-light
-
-
+      &__link
+        &:hover
+          .article-comments__link-icon, .article-comments__link-text
+            fill: $bg-btn
+            color: $bg-btn
+      &__likes
+        &-icon
+          &:hover
+            fill: #3DC47E
+      &__dislikes
+        &-icon
+          &:hover
+            fill: #FF4F52
 
     &-sliders
       &__author
@@ -204,7 +217,6 @@
         &-prev, &-next
           &:hover
             fill: #9493e2
-    
   .repost
     &__item
       transition: .3s
@@ -213,7 +225,6 @@
         box-shadow: inset 0 0 30px #455de0
         outline-color: rgba(255, 255, 255, 0)
         outline-offset: 15px
-
   .extra
     &-post
       &__card

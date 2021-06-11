@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const content = document.getElementById(`${tabAttr}`);
       content.classList.add('recommend-content--show');
     } else {
-      window.location.href = 'https://mywebdiving.ru/tour-plan/';
+      window.location.href = 'http://universal/article-freelance.html';
     }
   }
   //==========mobile menu================//

@@ -360,7 +360,7 @@
       flex-direction: row
       justify-content: space-between
       flex-wrap: wrap
-      align-items: center
+      align-items: start
     &__card
       width: 263px
       margin-bottom: 30px
@@ -385,6 +385,16 @@
 .article-comments
   padding-top: 90px
   padding-bottom: 30px
+  &__link
+    margin-right: 15px
+    display: flex
+    align-items: center
+    &-icon
+      margin-right: 5px
+      fill: #BCBFC2
+    &-text
+      @include font-param(12px, 400, 15px)
+      color: $main-dark
   &__wrapper
     max-width: 847px
     padding-left: 97px
@@ -414,6 +424,8 @@
     height: 40px
     border-radius: 20px
     border: 1px solid #D9DADB
+    &-icon
+      fill: #BCBFC2
   &__text
     @include font-param(14px, 900, 20px)
     color: $main-dark
@@ -462,11 +474,6 @@
   &__reply
     display: flex
     align-items: center
-  &__link
-    margin-right: 15px
-    &-text
-      @include font-param(12px, 400, 15px)
-      color: #939699
   &__count
     margin-right: 11px
     margin-left: 10px
@@ -480,6 +487,11 @@
     width: 15px
     height: 15px
     transform: rotate(180deg)
+    &-icon
+      fill: #BCBFC2
+  &__likes
+    &-icon
+      fill: #BCBFC2
   &__more
     margin-bottom: 60px
     padding: 6px 10px 5px 34px
@@ -562,6 +574,7 @@
       margin-left: 2px
     &-icon
       margin-left: 8px
+   
      
 
       
