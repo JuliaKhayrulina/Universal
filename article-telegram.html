@@ -55,45 +55,25 @@
                 </button>
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="Статьи">
-                <a
-                  href="index.html"
-                  class="menu-list__item-link menu-list__item-link--light scrollto"
-                  >Статьи</a
-                >
+                <a href="#" class="menu-list__item-link menu-list__item-link--light">Статьи</a>
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="Новости">
-                <a
-                  href="index.html#news"
-                  class="menu-list__item-link menu-list__item-link--light scrollto"
-                  >Новости</a
-                >
+                <a href="#" class="menu-list__item-link menu-list__item-link--light">Новости</a>
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="Горячее">
-                <a
-                  href="index.html#career"
-                  class="menu-list__item-link menu-list__item-link--light scrollto"
-                  >Горячее</a
-                >
+                <a href="#" class="menu-list__item-link menu-list__item-link--light">Горячее</a>
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="HTML">
-                <a href="#footer" class="menu-list__item-link menu-list__item-link--light scrollto"
-                  >HTML</a
-                >
+                <a href="#" class="menu-list__item-link menu-list__item-link--light">HTML</a>
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="CSS">
-                <a href="#footer" class="menu-list__item-link menu-list__item-link--light scrollto"
-                  >CSS</a
-                >
+                <a href="#" class="menu-list__item-link menu-list__item-link--light">CSS</a>
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="JavaScript">
-                <a href="#footer" class="menu-list__item-link menu-list__item-link--light scrollto"
-                  >JavaScript</a
-                >
+                <a href="#" class="menu-list__item-link menu-list__item-link--light">JavaScript</a>
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="Web Design">
-                <a href="#footer" class="menu-list__item-link menu-list__item-link--light scrollto"
-                  >Web Design</a
-                >
+                <a href="#" class="menu-list__item-link menu-list__item-link--light">Web Design</a>
               </li>
             </ul>
           </div>
@@ -130,9 +110,20 @@
               <a href="#" class="article-news__theme"> Новости</a>
               <div class="article-news__links navigation">
                 <a href="index.html" class="navigation__main">
-                  <span class="navigation__main-icon">
-                    <img src="./img/svg/Home.svg" alt="иконка: дом" />
-                  </span>
+                  <svg
+                    class="navigation__main-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3 18H8V12H12V18H17V11H19L10 1L1 11H3V18Z"
+                    />
+                  </svg>
                   На главную
                 </a>
                 <div class="navigation__inner">
@@ -1284,8 +1275,10 @@
             />
           </div>
           <div class="checkbox modal__form-agree">
-            <input id="check" type="checkbox" class="modal__form-checkbox" required />
-            <label for="check" class="modal__form-text">Согласен с обработкой данных</label>
+            <input id="check" type="checkbox" class="modal__form-checkbox" name="box" required />
+            <label for="check" class="checkbox-label modal__form-text"
+              >Согласен с обработкой данных</label
+            >
           </div>
           <div class="modal__form-submit">
             <button type="submit" class="modal__form-btn btn btn-hover">Отправить</button>

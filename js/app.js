@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  'use strict';
-
   //==============tabs===============//
   const tabs = document.querySelectorAll('.recommend-tabs__item');
   const contents = document.querySelectorAll('.recommend-content');
@@ -39,18 +37,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openMenu(event) {
     event.preventDefault();
-    menuLines.forEach((item) => {
-      item.classList.toggle('menu-button__line--active');
-    });
-    menu.classList.toggle('menu--visible');
+    if (window.screen.width < 767) {
+      menuLines.forEach((item) => {
+        item.classList.toggle('menu-button__line--active');
+      });
+      menu.classList.toggle('menu--visible');
+    }
+    // menuLines.forEach((item) => {
+    //   item.classList.toggle('menu-button__line--active');
+    // });
+    // menu.classList.toggle('menu--visible');
   }
 
   function closeMenu(event) {
     event.preventDefault();
-    menu.classList.remove('menu--visible');
-    menuLines.forEach((item) => {
-      item.classList.toggle('menu-button__line--active');
-    });
+    if (window.screen.width < 767) {
+      menu.classList.remove('menu--visible');
+      menuLines.forEach((item) => {
+        item.classList.toggle('menu-button__line--active');
+      });
+    }
+    // menu.classList.remove('menu--visible');
+    // menuLines.forEach((item) => {
+    //   item.classList.toggle('menu-button__line--active');
+    // });
   }
 
   //===================modal windows===========================//

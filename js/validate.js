@@ -1,49 +1,52 @@
 $(document).ready(function () {
+  'use strict';
+
   //==========Validation of the form=================================//
   $.validator.addMethod('onecheck', function (value, ele) {
     return $('input:checked').length >= 1;
-  }),
-    $('.form').each(function () {
-      $(this).validate({
-        errorClass: 'invalid',
-        ignore: [],
-        rules: {
-          select: {
-            required: true,
-          },
-          email: {
-            required: true,
-            email: true,
-          },
-          comment: {
-            required: true,
-            minlength: 100,
-          },
-          box: {
-            onecheck: true,
-          },
+  });
+
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: 'invalid',
+      ignore: [],
+      rules: {
+        select: {
+          required: true,
         },
-        messages: {
-          select: {
-            required: 'Выберите тему письма',
-          },
-          email: {
-            required: 'Пожалуйста, оставьте Ваш Email для связи',
-            email: 'Формат почты должен быть name@domain.com',
-          },
-          message: {
-            required: 'Пожалуйста, напишите сообщение',
-          },
-          comment: {
-            required: 'Напишите Ваш комментарий',
-            minlength: 'Количество символов не менее 100',
-          },
-          box: {
-            required: 'Необходимо ваше согласие',
-          },
+        email: {
+          required: true,
+          email: true,
         },
-      });
+        comment: {
+          required: true,
+          minlength: 100,
+        },
+        box: {
+          onecheck: true,
+        },
+      },
+      messages: {
+        select: {
+          required: 'Выберите тему письма',
+        },
+        email: {
+          required: 'Пожалуйста, оставьте Ваш Email для связи',
+          email: 'Формат почты должен быть name@domain.com',
+        },
+        message: {
+          required: 'Пожалуйста, напишите сообщение',
+        },
+        comment: {
+          required: 'Напишите Ваш комментарий',
+          minlength: 'Количество символов не менее 100',
+        },
+        box: {
+          required: 'Необходимо ваше согласие',
+        },
+      },
     });
+  });
 
   $('.phone-mask').each(function () {
     $(this).mask('+7 (999) 999-99-99');
