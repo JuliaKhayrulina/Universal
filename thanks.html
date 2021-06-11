@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/fonts.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
@@ -109,13 +110,13 @@
             Нам очень важно получать обратную связь. Мы ответим на Ваше письмо в ближайшее время.
           </p>
         </div>
-        <a href="index.html" class="btn btn-hover">
+        <a href="index.html" class="btn btn-hover thanks__btn">
           <svg
-            class="navigation__main-icon"
+            class="thanks__icon"
             width="20"
             height="20"
             viewBox="0 0 20 20"
-            fill="none"
+            fill="#fff"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -362,6 +363,9 @@
         </div>
       </div>
     </footer>
+    <a href="#to-top" id="back-to-top" class="to-top scrollto">
+      <img src="./img/svg/arrow-top.svg" class="to-top__icon" alt="вверх"
+    /></a>
     <div class="modal" id="header-modal">
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
@@ -381,13 +385,7 @@
 
           <div class="modal__form-middle">
             <label for="message" class="modal__label-message">Сообщение</label>
-            <textarea
-              class="modal__form-message"
-              id="newsletterInput-4"
-              id="message"
-              name="message"
-              required
-            ></textarea>
+            <textarea class="modal__form-message" id="message" name="message" required></textarea>
           </div>
 
           <div class="modal__form-bottom">
@@ -396,7 +394,6 @@
               type="email"
               class="input modal__form-input"
               id="email"
-              id="newsletterInput-3"
               name="email"
               required
               autocomplete="off"

@@ -1,10 +1,16 @@
 html
+  width: 100%
+  max-width: 100%
   font-family: "Lato", "Arial", sans-serif
   font-size: 14px
   color: #fff
+  overflow-x: hidden
 body
+  width: 100%
+  max-width: 100%
   opacity: 0
   transition: .5s
+  overflow-x: hidden
 *
   box-sizing: border-box
 h1, h2, h3, h4, h5, h6, p, body
@@ -172,13 +178,17 @@ blockquote
 .to-top
   width: 70px
   height: 70px
+  display: flex
+  align-items: center
+  justify-content: center
   border-radius: 50%
   z-index: 95
   position: fixed
   bottom: 25px
-  right: 70px
-  padding: 10px 30px
-  background: #000000 url('../img/svg/arrow-top.svg') center center no-repeat
-  background-size: 35px 25px
-  
+  right: 40px
+  background-color: #000
+  &__icon
+    width: 35px
+    height: 35px
+
 
