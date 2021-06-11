@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="preload" href="./css/fonts.min.css" as="style" />
     <link rel="preload" href="./css/style.min.css" as="style" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -47,25 +47,51 @@
                   </button>
                 </li>
                 <li class="menu-list__item" data-hover="Статьи">
-                  <a href="#articles" class="menu-list__item-link scrollto">Статьи</a>
+                  <a
+                    href="#articles"
+                    class="menu-list__item-link menu-list__item-link--mobile scrollto"
+                    >Статьи</a
+                  >
                 </li>
                 <li class="menu-list__item" data-hover="Новости">
-                  <a href="#news" class="menu-list__item-link scrollto">Новости</a>
+                  <a href="#news" class="menu-list__item-link menu-list__item-link--mobile scrollto"
+                    >Новости</a
+                  >
                 </li>
                 <li class="menu-list__item" data-hover="Горячее">
-                  <a href="#career" class="menu-list__item-link scrollto">Горячее</a>
+                  <a
+                    href="#career"
+                    class="menu-list__item-link menu-list__item-link--mobile scrollto"
+                    >Горячее</a
+                  >
                 </li>
                 <li class="menu-list__item" data-hover="HTML">
-                  <a href="#footer" class="menu-list__item-link scrollto">HTML</a>
+                  <a
+                    href="#footer"
+                    class="menu-list__item-link menu-list__item-link--mobile scrollto"
+                    >HTML</a
+                  >
                 </li>
                 <li class="menu-list__item" data-hover="CSS">
-                  <a href="#footer" class="menu-list__item-link scrollto">CSS</a>
+                  <a
+                    href="#footer"
+                    class="menu-list__item-link menu-list__item-link--mobile scrollto"
+                    >CSS</a
+                  >
                 </li>
                 <li class="menu-list__item" data-hover="JavaScript">
-                  <a href="#footer" class="menu-list__item-link scrollto">JavaScript</a>
+                  <a
+                    href="#footer"
+                    class="menu-list__item-link menu-list__item-link--mobile scrollto"
+                    >JavaScript</a
+                  >
                 </li>
                 <li class="menu-list__item" data-hover="Web Design">
-                  <a href="#footer" class="menu-list__item-link scrollto">Web Design</a>
+                  <a
+                    href="#footer"
+                    class="menu-list__item-link menu-list__item-link--mobile scrollto"
+                    >Web Design</a
+                  >
                 </li>
               </ul>
             </div>
@@ -547,7 +573,12 @@
                 class="about-tools__img"
                 type="image/webp"
               />
-              <img src="./img/articles/notebook.jpg" alt="notebook" class="about-tools__img" />
+              <img
+                src="./img/articles/notebook.jpg"
+                alt="notebook"
+                class="about-tools__img"
+                loading="lazy"
+              />
             </picture>
           </div>
           <h4 class="about-tools__title">20+ инструментов для js-разработчика</h4>
@@ -1185,6 +1216,7 @@
                     src="./img/career/slide-one.jpg"
                     alt="Readers choice"
                     class="career-sliders__slide-img"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="career-sliders__gradient"></div>
@@ -1195,6 +1227,7 @@
                         src="./img/career/Oksana-Pushkina.jpg"
                         alt="Фотограф: Оксана Пушкина"
                         class="avatar career-sliders__author-avatar"
+                        loading="lazy"
                       />
                     </a>
                     <a href="#" class="career-sliders__author-info">
@@ -1227,6 +1260,7 @@
                     src="./img/career/slide-two.jpg"
                     alt="Readers choice"
                     class="career-sliders__slide-img"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="career-sliders__gradient"></div>
@@ -1269,6 +1303,7 @@
                     src="./img/career/slide-three.jpg"
                     alt="Readers choice"
                     class="career-sliders__slide-img"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="career-sliders__gradient"></div>
@@ -1311,6 +1346,7 @@
                     src="./img/career/slide-four.jpg"
                     alt="Readers choice"
                     class="career-sliders__slide-img"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="career-sliders__gradient"></div>
@@ -1353,6 +1389,7 @@
                     src="./img/career/slide-five.jpg"
                     alt="Readers choice"
                     class="career-sliders__slide-img"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="career-sliders__gradient"></div>
@@ -1363,6 +1400,7 @@
                         src="./img/recommend/Mihail-Rudenya.jpg"
                         alt="Разработчик: Михаил Руденя"
                         class="avatar career-sliders__author-avatar"
+                        loading="lazy"
                       />
                     </a>
                     <a href="#" class="career-sliders__author-info">
@@ -1561,6 +1599,7 @@
                   class="footer-logo__icon"
                   width="53"
                   height="18"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -1695,14 +1734,10 @@
             />
           </div>
           <div class="checkbox modal__form-agree">
-            <input
-              id="check"
-              type="checkbox"
-              class="modal__form-checkbox"
-              name="checkbox"
-              required
-            />
-            <label for="check" class="modal__form-text">Согласен с обработкой данных</label>
+            <input id="check" type="checkbox" class="modal__form-checkbox" name="box" required />
+            <label for="check" class="checkbox-label modal__form-text"
+              >Согласен с обработкой данных</label
+            >
           </div>
           <div class="modal__form-submit">
             <button type="submit" class="modal__form-btn btn btn-hover">Отправить</button>

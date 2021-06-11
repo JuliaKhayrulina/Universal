@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/fonts.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Universal</title>
   </head>
   <body>
-    <header class="header header-light header-light--mobile-fixed header--light">
+    <header id="to-top" class="header header-light header-light--mobile-fixed header--light">
       <div class="container header-wrapper">
         <div class="header-logo">
           <a href="index.html" class="header-logo__link">
@@ -54,18 +54,22 @@
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="Статьи">
                 <a
-                  href="#articles"
+                  href="index.html"
                   class="menu-list__item-link menu-list__item-link--light scrollto"
                   >Статьи</a
                 >
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="Новости">
-                <a href="#news" class="menu-list__item-link menu-list__item-link--light scrollto"
+                <a
+                  href="index.html#news"
+                  class="menu-list__item-link menu-list__item-link--light scrollto"
                   >Новости</a
                 >
               </li>
               <li class="menu-list__item menu-list__item--mr" data-hover="Горячее">
-                <a href="#career" class="menu-list__item-link menu-list__item-link--light scrollto"
+                <a
+                  href="index.html#career"
+                  class="menu-list__item-link menu-list__item-link--light scrollto"
                   >Горячее</a
                 >
               </li>
@@ -382,12 +386,10 @@
               <option value="Предложение">Предложения</option>
             </select>
           </div>
-
           <div class="modal__form-middle">
             <label for="message" class="modal__label-message">Сообщение</label>
             <textarea class="modal__form-message" id="message" name="message" required></textarea>
           </div>
-
           <div class="modal__form-bottom">
             <label for="email" class="modal__label-email">Email</label>
             <input
@@ -413,7 +415,7 @@
     <script defer src="./js/swiper-bundle.min.js"></script>
     <script defer src="./js/jquery.validate.min.js"></script>
     <script defer src="./js/jquery.mask.min.js"></script>
-    <script defer src="./js/validate.js"></script>
-    <script defer src="./js/app.js"></script>
+    <script defer src="./js/validate.min.js"></script>
+    <script defer src="./js/app.min.js"></script>
   </body>
 </html>

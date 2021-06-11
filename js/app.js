@@ -22,21 +22,36 @@ document.addEventListener('DOMContentLoaded', () => {
       const content = document.getElementById(`${tabAttr}`);
       content.classList.add('recommend-content--show');
     } else {
-      window.location.href = 'http://universal/article-freelance.html';
+      window.location.href = 'https://mywebdiving.ru/UNIVERSAL/article-freelance.html';
     }
   }
   //==========mobile menu================//
   let menuBtn = document.querySelector('.menu-button');
   let menu = document.querySelector('.menu');
   let menuLines = document.querySelectorAll('.menu-button__line');
+  let menuLink = document.querySelectorAll('.menu-list__item-link');
 
-  menuBtn.addEventListener('click', function () {
+  menuLink.forEach((item) => {
+    item.addEventListener('click', closeMenu);
+  });
+
+  menuBtn.addEventListener('click', openMenu);
+
+  function openMenu(event) {
+    event.preventDefault();
     menuLines.forEach((item) => {
       item.classList.toggle('menu-button__line--active');
     });
-
     menu.classList.toggle('menu--visible');
-  });
+  }
+
+  function closeMenu(event) {
+    event.preventDefault();
+    menu.classList.remove('menu--visible');
+    menuLines.forEach((item) => {
+      item.classList.toggle('menu-button__line--active');
+    });
+  }
 
   //===================modal windows===========================//
   const openModalBtn = document.querySelectorAll('[data-toggle=modal]');
